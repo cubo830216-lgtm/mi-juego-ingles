@@ -214,6 +214,14 @@
             feedbackArea.className = "feedback incorrect";
         };
     }
+const nextBtn = document.getElementById('nextBtn');
+
+nextBtn.addEventListener('click', () => {
+    feedbackArea.textContent = "";
+    feedbackArea.className = "feedback";
+    setRandomItem(); // Cambia al siguiente ítem directamente
+});
+
 </script>
 
 </body>
