@@ -109,7 +109,7 @@
     <div class="actions">
       <button class="btn-icon" id="listenBtn">🔊</button>
       <button class="btn-icon" id="speakBtn">🎧</button>
-      <button class="btn-icon" id="nextBtn">➡️</button> <!-- Nuevo botón --
+
     </div>
 
     <div class="feedback" id="feedbackArea"></div>
@@ -224,13 +224,7 @@
             feedbackArea.className = "feedback incorrect";
         };
     }
-    const nextBtn = document.getElementById('nextBtn');
 
-nextBtn.addEventListener('click', () => {
-    feedbackArea.textContent = "";
-    feedbackArea.className = "feedback";
-    setRandomItem(); // Cambia al siguiente ítem directamente
-});
 
   </script>
 </body>
