@@ -109,6 +109,7 @@
     <div class="actions">
       <button class="btn-icon" id="listenBtn">🔊</button>
       <button class="btn-icon" id="speakBtn">🎧</button>
+      <button class="btn-icon" id="nextBtn" title="Siguiente">➡️</button>
 
     </div>
 
@@ -156,6 +157,7 @@
     const translationLabel = document.getElementById('translationLabel');
     const listenBtn = document.getElementById('listenBtn');
     const speakBtn = document.getElementById('speakBtn');
+    const speakBtn = document.getElementById('speakBtn'//---------------------------
     const feedbackArea = document.getElementById('feedbackArea');
 
     function setRandomItem() {
@@ -182,6 +184,7 @@
             window.speechSynthesis.speak(utterance);
         }
     });
+    const speakBtn = document.getElementById('speakBtn'//-----------------
 
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
