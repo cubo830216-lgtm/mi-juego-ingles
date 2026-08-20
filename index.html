@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App con iFrame</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { display: flex; flex-direction: column; height: 100vh; }
+        header { background: #2c3e50; color: white; padding: 15px; text-align: center; }
+        
+        .layout { display: flex; flex: 1; }
+        aside { width: 200px; background: #34495e; padding: 15px; }
+        
+        /* El enlace usa la propiedad 'target' para enviar el contenido al iframe */
+        aside a {
+            display: block;
+            background: #1abc9c;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        main { flex: 1; background: #ecf0f1; }
+        
+        /* El iframe ocupa todo el espacio del main */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Juego de Inglés</h1>
+    </header>
+
+    <div class="layout">
+        <aside>
+            <!-- El atributo target="visor" le dice al enlace que abra la página en el iframe -->
+            <a href="colores.html" target="visor">🎨 Colores</a>
+            <a href="verbos.html" target="visor">🏃 Verbos</a>
+        </aside>
+
+        <main>
+            <!-- Este iframe carga por defecto colores.html -->
+            <iframe name="visor" src="colores.html"></iframe>
+        </main>
+    </div>
+
+</body>
+</html>
