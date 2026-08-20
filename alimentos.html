@@ -109,7 +109,6 @@
     <div class="actions">
       <button class="btn-icon" id="listenBtn">🔊</button>
       <button class="btn-icon" id="speakBtn">🎧</button>
-      <button class="btn-icon" id="nextBtn" title="Siguiente">➡️</button>
     </div>
 
     <div class="feedback" id="feedbackArea"></div>
@@ -157,7 +156,7 @@
     const listenBtn = document.getElementById('listenBtn');
     const speakBtn = document.getElementById('speakBtn');
     const feedbackArea = document.getElementById('feedbackArea');
-    const nextBtn = document.getElementById('nextBtn');//-----------------------
+
     function setRandomItem() {
         let newIdx;
         do {
@@ -184,7 +183,6 @@
     });
 
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    nextBtn.addEventListener('click', setRandomItem);//---------------
 
     if (SpeechRecognition) {
         const recognition = new SpeechRecognition();
