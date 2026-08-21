@@ -11,5 +11,6 @@ window.catalogoGlobal = [
   { "id": 8, "titulo": "Meses", "grupo": "M1", "emoji": "🗓️" },
   { "id": 9, "titulo": "Preguntas", "grupo": "Q1", "emoji": "❓" },
   { "id": 10, "titulo": "Auxiliares", "grupo": "X1", "emoji": "⚡" },
-  { "id": 13, "titulo": "Transporte", "grupo": "T1", "emoji": "🚗" }
+  { "id": 13, "titulo": "Transporte", "grupo": "T1", "emoji": "🚗" },
+  { "id": 14, "titulo": "Escuela", "grupo": "E1", "emoji": "🏫" }
 ];
