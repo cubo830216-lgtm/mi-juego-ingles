@@ -773,7 +773,7 @@ window.palabrasGlobal = [
     "emoji": null,
     "urs_imagen": null
   },
-    {
+  {
     "id": 90,
     "name": "I",
     "translation": "yo",
