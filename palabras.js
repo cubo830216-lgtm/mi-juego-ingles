@@ -844,5 +844,113 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "🧑‍🤝‍🧑",
     "urs_imagen": null
+  },
+  {
+    "id": 98,
+    "name": "january",
+    "translation": "Enero",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "❄️",
+    "urs_imagen": null
+  },
+  {
+    "id": 99,
+    "name": "february",
+    "translation": "Febrero",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "❤️",
+    "urs_imagen": null
+  },
+  {
+    "id": 100,
+    "name": "march",
+    "translation": "Marzo",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "🌱",
+    "urs_imagen": null
+  },
+  {
+    "id": 101,
+    "name": "april",
+    "translation": "Abril",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "🌧️",
+    "urs_imagen": null
+  },
+  {
+    "id": 102,
+    "name": "may",
+    "translation": "Mayo",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "💐",
+    "urs_imagen": null
+  },
+  {
+    "id": 103,
+    "name": "june",
+    "translation": "Junio",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "☀️",
+    "urs_imagen": null
+  },
+  {
+    "id": 104,
+    "name": "july",
+    "translation": "Julio",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "🏖️",
+    "urs_imagen": null
+  },
+  {
+    "id": 105,
+    "name": "august",
+    "translation": "Agosto",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "🍉",
+    "urs_imagen": null
+  },
+  {
+    "id": 106,
+    "name": "september",
+    "translation": "Septiembre",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "🎒",
+    "urs_imagen": null
+  },
+  {
+    "id": 107,
+    "name": "october",
+    "translation": "Octubre",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "🎃",
+    "urs_imagen": null
+  },
+  {
+    "id": 108,
+    "name": "november",
+    "translation": "Noviembre",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "🍂",
+    "urs_imagen": null
+  },
+  {
+    "id": 109,
+    "name": "december",
+    "translation": "Diciembre",
+    "grupo": "M1",
+    "color": "#000000",
+    "emoji": "🎄",
+    "urs_imagen": null
   }
 ];
