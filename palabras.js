@@ -1141,5 +1141,95 @@ window.palabrasGlobal = [
     "color": "#ffd700",
     "emoji": null,
     "urs_imagen": null
+  },
+  {
+    "id": 131,
+    "name": "car",
+    "translation": "Auto / Coche",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "🚗",
+    "urs_imagen": null
+  },
+  {
+    "id": 132,
+    "name": "bicycle",
+    "translation": "Bicicleta",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "🚲",
+    "urs_imagen": null
+  },
+  {
+    "id": 133,
+    "name": "skateboard",
+    "translation": "Patineta",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "🛹",
+    "urs_imagen": null
+  },
+  {
+    "id": 134,
+    "name": "roller skates",
+    "translation": "Patines",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "🛼",
+    "urs_imagen": null
+  },
+  {
+    "id": 135,
+    "name": "scooter",
+    "translation": "Patinete / Monopatín",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "🛵",
+    "urs_imagen": null
+  },
+  {
+    "id": 136,
+    "name": "bus",
+    "translation": "Autobús",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "🚌",
+    "urs_imagen": null
+  },
+  {
+    "id": 137,
+    "name": "motorcycle",
+    "translation": "Motocicleta",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "🏍️",
+    "urs_imagen": null
+  },
+  {
+    "id": 138,
+    "name": "airplane",
+    "translation": "Avión",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "✈️",
+    "urs_imagen": null
+  },
+  {
+    "id": 139,
+    "name": "train",
+    "translation": "Tren",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "🚆",
+    "urs_imagen": null
+  },
+  {
+    "id": 140,
+    "name": "boat",
+    "translation": "Barco / Lancha",
+    "grupo": "T1",
+    "color": "#000000",
+    "emoji": "⛵",
+    "urs_imagen": null
   }
 ];
