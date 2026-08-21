@@ -1061,4 +1061,58 @@ window.palabrasGlobal = [
     "emoji": "🚫",
     "urs_imagen": null
   }
+  {
+    "id": 122,
+    "name": "like",
+    "translation": "Gustar",
+    "grupo": "V2",
+    "color": "#000000",
+    "emoji": "❤️",
+    "urs_imagen": null
+  },
+  {
+    "id": 123,
+    "name": "want",
+    "translation": "Querer",
+    "grupo": "V2",
+    "color": "#000000",
+    "emoji": "💭",
+    "urs_imagen": null
+  },
+  {
+    "id": 124,
+    "name": "have",
+    "translation": "Tener",
+    "grupo": "V2",
+    "color": "#000000",
+    "emoji": "🪪",
+    "urs_imagen": null
+  },
+  {
+    "id": 125,
+    "name": "go",
+    "translation": "Ir",
+    "grupo": "V2",
+    "color": "#000000",
+    "emoji": "🏃‍♂️",
+    "urs_imagen": null
+  },
+  {
+    "id": 126,
+    "name": "see",
+    "translation": "Ver",
+    "grupo": "V2",
+    "color": "#000000",
+    "emoji": "👀",
+    "urs_imagen": null
+  },
+  {
+    "id": 127,
+    "name": "speak",
+    "translation": "Hablar",
+    "grupo": "V2",
+    "color": "#000000",
+    "emoji": "🗣️",
+    "urs_imagen": null
+  }
 ];
