@@ -772,5 +772,77 @@ window.palabrasGlobal = [
     "color": "#ffffff",
     "emoji": null,
     "urs_imagen": null
+  },
+    {
+    "id": 90,
+    "name": "I",
+    "translation": "yo",
+    "grupo": "P1",
+    "color": "#000000",
+    "emoji": "🙋‍♂️",
+    "urs_imagen": null
+  },
+  {
+    "id": 91,
+    "name": "You",
+    "translation": "tu",
+    "grupo": "P1",
+    "color": "#000000",
+    "emoji": "🫵",
+    "urs_imagen": null
+  },
+  {
+    "id": 92,
+    "name": "He",
+    "translation": "el",
+    "grupo": "P1",
+    "color": "#000000",
+    "emoji": "👨",
+    "urs_imagen": null
+  },
+  {
+    "id": 93,
+    "name": "She",
+    "translation": "ella",
+    "grupo": "P1",
+    "color": "#000000",
+    "emoji": "👩",
+    "urs_imagen": null
+  },
+  {
+    "id": 94,
+    "name": "It",
+    "translation": "eso",
+    "grupo": "P1",
+    "color": "#000000",
+    "emoji": "📦",
+    "urs_imagen": null
+  },
+  {
+    "id": 95,
+    "name": "We",
+    "translation": "nosotros",
+    "grupo": "P1",
+    "color": "#000000",
+    "emoji": "👥",
+    "urs_imagen": null
+  },
+  {
+    "id": 96,
+    "name": "You",
+    "translation": "ustedes",
+    "grupo": "P1",
+    "color": "#000000",
+    "emoji": "👥",
+    "urs_imagen": null
+  },
+  {
+    "id": 97,
+    "name": "They",
+    "translation": "ellos",
+    "grupo": "P1",
+    "color": "#000000",
+    "emoji": "🧑‍🤝‍🧑",
+    "urs_imagen": null
   }
 ];
