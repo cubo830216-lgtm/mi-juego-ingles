@@ -1060,7 +1060,7 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "🚫",
     "urs_imagen": null
-  }
+  },
   {
     "id": 122,
     "name": "like",
