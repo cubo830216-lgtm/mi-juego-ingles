@@ -1231,5 +1231,122 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "⛵",
     "urs_imagen": null
+  },
+  {
+    "id": 141,
+    "name": "pencil",
+    "translation": "Lápiz",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "✏️",
+    "urs_imagen": null
+  },
+  {
+    "id": 142,
+    "name": "pen",
+    "translation": "Pluma / Bolígrafo",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "🖊️",
+    "urs_imagen": null
+  },
+  {
+    "id": 143,
+    "name": "notebook",
+    "translation": "Libreta / Cuaderno",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "📓",
+    "urs_imagen": null
+  },
+  {
+    "id": 144,
+    "name": "book",
+    "translation": "Libro",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "📖",
+    "urs_imagen": null
+  },
+  {
+    "id": 145,
+    "name": "pencil case",
+    "translation": "Estuchera / Lapicera",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "👝",
+    "urs_imagen": null
+  },
+  {
+    "id": 146,
+    "name": "backpack",
+    "translation": "Mochila",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "🎒",
+    "urs_imagen": null
+  },
+  {
+    "id": 147,
+    "name": "ruler",
+    "translation": "Regla",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "📏",
+    "urs_imagen": null
+  },
+  {
+    "id": 148,
+    "name": "triangle ruler",
+    "translation": "Escuadra",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "📐",
+    "urs_imagen": null
+  },
+  {
+    "id": 149,
+    "name": "eraser",
+    "translation": "Borrador / Goma",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "🧹",
+    "urs_imagen": null
+  },
+  {
+    "id": 150,
+    "name": "scissors",
+    "translation": "Tijeras",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "✂️",
+    "urs_imagen": null
+  },
+  {
+    "id": 151,
+    "name": "glue",
+    "translation": "Pegamento / Resistol",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "🧪",
+    "urs_imagen": null
+  },
+  {
+    "id": 152,
+    "name": "sharpener",
+    "translation": "Sacapuntas",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "✏️",
+    "urs_imagen": null
+  },
+  {
+    "id": 153,
+    "name": "colors",
+    "translation": "Colores / Crayones",
+    "grupo": "E1",
+    "color": "#000000",
+    "emoji": "🖍️",
+    "urs_imagen": null
   }
 ];
