@@ -1010,7 +1010,7 @@ window.palabrasGlobal = [
   {
     "id": 116,
     "name": "do",
-    "translation": "Hacer / Auxiliar presente",
+    "translation": "Hacer",
     "grupo": "X1",
     "color": "#000000",
     "emoji": "🛠️",
@@ -1019,7 +1019,7 @@ window.palabrasGlobal = [
   {
     "id": 117,
     "name": "not",
-    "translation": "No (negación)",
+    "translation": "No",
     "grupo": "X1",
     "color": "#000000",
     "emoji": "🚫",
@@ -1028,7 +1028,7 @@ window.palabrasGlobal = [
   {
     "id": 118,
     "name": "will",
-    "translation": "Auxiliar futuro",
+    "translation": "Futuro",
     "grupo": "X1",
     "color": "#000000",
     "emoji": "🚀",
@@ -1037,7 +1037,7 @@ window.palabrasGlobal = [
   {
     "id": 119,
     "name": "can",
-    "translation": "Poder (capacidad)",
+    "translation": "Poder",
     "grupo": "X1",
     "color": "#000000",
     "emoji": "💪",
@@ -1046,7 +1046,7 @@ window.palabrasGlobal = [
   {
     "id": 120,
     "name": "don't",
-    "translation": "No (do + not)",
+    "translation": "No hagas",
     "grupo": "X1",
     "color": "#000000",
     "emoji": "❌",
