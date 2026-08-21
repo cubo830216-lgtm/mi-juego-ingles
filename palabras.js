@@ -1006,5 +1006,59 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "👤",
     "urs_imagen": null
+  },
+  {
+    "id": 116,
+    "name": "do",
+    "translation": "Hacer / Auxiliar presente",
+    "grupo": "X1",
+    "color": "#000000",
+    "emoji": "🛠️",
+    "urs_imagen": null
+  },
+  {
+    "id": 117,
+    "name": "not",
+    "translation": "No (negación)",
+    "grupo": "X1",
+    "color": "#000000",
+    "emoji": "🚫",
+    "urs_imagen": null
+  },
+  {
+    "id": 118,
+    "name": "will",
+    "translation": "Auxiliar futuro",
+    "grupo": "X1",
+    "color": "#000000",
+    "emoji": "🚀",
+    "urs_imagen": null
+  },
+  {
+    "id": 119,
+    "name": "can",
+    "translation": "Poder (capacidad)",
+    "grupo": "X1",
+    "color": "#000000",
+    "emoji": "💪",
+    "urs_imagen": null
+  },
+  {
+    "id": 120,
+    "name": "don't",
+    "translation": "No (do + not)",
+    "grupo": "X1",
+    "color": "#000000",
+    "emoji": "❌",
+    "urs_imagen": null
+  },
+  {
+    "id": 121,
+    "name": "can't",
+    "translation": "No poder",
+    "grupo": "X1",
+    "color": "#000000",
+    "emoji": "🚫",
+    "urs_imagen": null
   }
 ];
