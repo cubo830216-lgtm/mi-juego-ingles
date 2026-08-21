@@ -1114,5 +1114,32 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "🗣️",
     "urs_imagen": null
+  },
+  {
+    "id": 128,
+    "name": "brown",
+    "translation": "Marrón / Café",
+    "grupo": "C2",
+    "color": "#795548",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 129,
+    "name": "gray",
+    "translation": "Gris",
+    "grupo": "C2",
+    "color": "#9e9e9e",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 130,
+    "name": "gold",
+    "translation": "Dorado",
+    "grupo": "C2",
+    "color": "#ffd700",
+    "emoji": null,
+    "urs_imagen": null
   }
 ];
