@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escribir</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 360px;
+      height: 100%;
+      max-height: 500px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Caja de Emoji / Color */
+    .emoji-box {
+      width: 100%;
+      flex: 1;
+      max-height: 160px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4.5rem;
+      margin-bottom: 5px;
+      background-color: #eff6ff;
+      transition: background-color 0.3s;
+    }
+
+    .word-translation {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #1e293b;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    /* Formulario de Escritura */
+    .input-group {
+      width: 100%;
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .txt-input {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      text-align: center;
+      outline: none;
+    }
+
+    .txt-input:focus {
+      border-color: #38bdf8;
+    }
+
+    .btn-submit {
+      background-color: #22c55e;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-submit:active {
+      background-color: #16a34a;
+    }
+
+    /* Mensaje de Feedback */
+    .feedback {
+      font-size: 0.9rem;
+      font-weight: bold;
+      height: 20px;
+      text-align: center;
+    }
+
+    /* Botones de Navegación */
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn-nav {
+      flex: 1;
+      background-color: #38bdf8;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn-nav:active {
+      background-color: #0284c7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div id="emoji-box" class="emoji-box">
+      <span id="emoji-txt">❓</span>
+    </div>
+
+    <!-- Muestra solo la traducción para adivinar/escribir en inglés -->
+    <div id="translation" class="word-translation">---</div>
+
+    <!-- Entrada de Texto + Aceptar -->
+    <form class="input-group" onsubmit="validarEscritura(event)">
+      <input type="text" id="respuesta" class="txt-input" placeholder="Escribe aquí..." autocomplete="off">
+      <button type="submit" class="btn-submit">Aceptar</button>
+    </form>
+
+    <div id="feedback" class="feedback"></div>
+
+    <!-- Navegación -->
+    <div class="nav-buttons">
+      <button class="btn-nav" type="button" onclick="anteriorPalabra()">⬅️ Atrás</button>
+      <button class="btn-nav" type="button" onclick="siguientePalabra()">➡️ Siguiente</button>
+    </div>
+  </div>
+
+  <script src="palabras.js"></script>
+
+  <script>
+    let palabrasFiltradas = [];
+    let indiceActual = 0;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    let grupo = urlParams.get('grupo');
+
+    if (!grupo && window.parent && window.parent.grupoSeleccionado) {
+      grupo = window.parent.grupoSeleccionado;
+    }
+
+    if (window.palabrasGlobal && Array.isArray(window.palabrasGlobal)) {
+      palabrasFiltradas = window.palabrasGlobal.filter(p => p.grupo === grupo);
+    }
+
+    function mostrarPalabra() {
+      const feedback = document.getElementById('feedback');
+      const input = document.getElementById('respuesta');
+      feedback.innerText = '';
+      feedback.style.color = '';
+      input.value = '';
+
+      if (palabrasFiltradas.length === 0) {
+        document.getElementById('translation').innerText = "Sin datos";
+        document.getElementById('emoji-txt').innerText = "⚠️";
+        return;
+      }
+
+      const item = palabrasFiltradas[indiceActual];
+      const elemBox = document.getElementById('emoji-box');
+      const elemEmojiTxt = document.getElementById('emoji-txt');
+
+      document.getElementById('translation').innerText = item.translation || '---';
+
+      // Validación de Color
+      const color = (item.color || '').trim().toLowerCase();
+      const esNegro = color === '' || color === 'black' || color === '#000000' || color === '#000';
+
+      if (!esNegro) {
+        elemBox.style.backgroundColor = item.color;
+        elemEmojiTxt.innerText = '';
+      } else {
+        elemBox.style.backgroundColor = '#eff6ff';
+        elemEmojiTxt.innerText = item.emoji || '❓';
+      }
+    }
+
+    function validarEscritura(event) {
+      event.preventDefault();
+      if (palabrasFiltradas.length === 0) return;
+
+      const input = document.getElementById('respuesta');
+      const feedback = document.getElementById('feedback');
+      
+      // Convertir ambas partes a minúsculas y quitar espacios extra
+      const dicho = input.value.toLowerCase().trim();
+      const correcto = (palabrasFiltradas[indiceActual].name || '').toLowerCase().trim();
+
+      if (dicho === correcto) {
+        feedback.style.color = '#22c55e';
+        feedback.innerText = '¡Correcto! 🎉';
+        setTimeout(() => {
+          siguientePalabra();
+        }, 800);
+      } else {
+        feedback.style.color = '#ef4444';
+        feedback.innerText = 'Intenta de nuevo ❌';
+      }
+    }
+
+    function siguientePalabra() {
+      if (palabrasFiltradas.length === 0) return;
+      indiceActual++;
+      if (indiceActual >= palabrasFiltradas.length) {
+        indiceActual = 0;
+      }
+      mostrarPalabra();
+    }
+
+    function anteriorPalabra() {
+      if (palabrasFiltradas.length === 0) return;
+      indiceActual--;
+      if (indiceActual < 0) {
+        indiceActual = palabrasFiltradas.length - 1;
+      }
+      mostrarPalabra();
+    }
+
+    mostrarPalabra();
+  </script>
+
+</body>
+</html>

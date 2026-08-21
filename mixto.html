@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixto</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 360px;
+      height: 100%;
+      max-height: 520px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Caja de Emoji / Color */
+    .emoji-box {
+      width: 100%;
+      flex: 1;
+      max-height: 150px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      margin-bottom: 5px;
+      background-color: #eff6ff;
+      transition: background-color 0.3s;
+    }
+
+    .word-translation {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #1e293b;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    /* Entrada de texto */
+    .input-group {
+      width: 100%;
+      display: flex;
+      gap: 8px;
+      margin-bottom: 5px;
+    }
+
+    .txt-input {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      font-size: 1rem;
+      text-align: center;
+      outline: none;
+    }
+
+    .txt-input:focus {
+      border-color: #38bdf8;
+    }
+
+    .btn-submit {
+      background-color: #22c55e;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Botones de Voz (Bocina y Micrófono) */
+    .voice-actions {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 5px;
+    }
+
+    .btn-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #e2e8f0;
+      background-color: #f8fafc;
+      font-size: 1.3rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    }
+
+    .btn-circle:active {
+      transform: scale(0.95);
+    }
+
+    /* Estado / Feedback */
+    .feedback {
+      font-size: 0.85rem;
+      font-weight: bold;
+      height: 18px;
+      text-align: center;
+    }
+
+    /* Botones de Navegación */
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn-nav {
+      flex: 1;
+      background-color: #38bdf8;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn-nav:active {
+      background-color: #0284c7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div id="emoji-box" class="emoji-box">
+      <span id="emoji-txt">❓</span>
+    </div>
+
+    <!-- Muestra traducción -->
+    <div id="translation" class="word-translation">---</div>
+
+    <!-- Formulario para escribir -->
+    <form class="input-group" onsubmit="validarEscritura(event)">
+      <input type="text" id="respuesta" class="txt-input" placeholder="Escribe aquí..." autocomplete="off">
+      <button type="submit" id="btn-escrito" class="btn-submit">Aceptar</button>
+    </form>
+
+    <!-- Botones de Bocina y Micrófono -->
+    <div class="voice-actions">
+      <button class="btn-circle" type="button" onclick="escucharPalabra()">🔊</button>
+      <button class="btn-circle" type="button" onclick="reconocerVoz()">🎧</button>
+    </div>
+
+    <div id="feedback" class="feedback"></div>
+
+    <!-- Navegación -->
+    <div class="nav-buttons">
+      <button class="btn-nav" type="button" onclick="anteriorPalabra()">⬅️ Atrás</button>
+      <button class="btn-nav" type="button" onclick="siguientePalabra()">➡️ Siguiente</button>
+    </div>
+  </div>
+
+  <script src="palabras.js"></script>
+
+  <script>
+    let palabrasFiltradas = [];
+    let indiceActual = 0;
+    let progresoPasos = 0; // Debe llegar a 2 (1 escrito + 1 hablado) para cambiar de palabra
+    let escritoCompletado = false;
+    let habladoCompletado = false;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    let grupo = urlParams.get('grupo');
+
+    if (!grupo && window.parent && window.parent.grupoSeleccionado) {
+      grupo = window.parent.grupoSeleccionado;
+    }
+
+    if (window.palabrasGlobal && Array.isArray(window.palabrasGlobal)) {
+      palabrasFiltradas = window.palabrasGlobal.filter(p => p.grupo === grupo);
+    }
+
+    function mostrarPalabra() {
+      // Reiniciar estados del item actual
+      progresoPasos = 0;
+      escritoCompletado = false;
+      habladoCompletado = false;
+
+      const feedback = document.getElementById('feedback');
+      const input = document.getElementById('respuesta');
+      const btnEscrito = document.getElementById('btn-escrito');
+      
+      feedback.innerText = 'Completa escritura y voz (0/2)';
+      feedback.style.color = '#64748b';
+      input.value = '';
+      input.disabled = false;
+      btnEscrito.disabled = false;
+
+      if (palabrasFiltradas.length === 0) {
+        document.getElementById('translation').innerText = "Sin datos";
+        document.getElementById('emoji-txt').innerText = "⚠️";
+        feedback.innerText = '';
+        return;
+      }
+
+      const item = palabrasFiltradas[indiceActual];
+      const elemBox = document.getElementById('emoji-box');
+      const elemEmojiTxt = document.getElementById('emoji-txt');
+
+      document.getElementById('translation').innerText = item.translation || '---';
+
+      // Validación de Color
+      const color = (item.color || '').trim().toLowerCase();
+      const esNegro = color === '' || color === 'black' || color === '#000000' || color === '#000';
+
+      if (!esNegro) {
+        elemBox.style.backgroundColor = item.color;
+        elemEmojiTxt.innerText = '';
+      } else {
+        elemBox.style.backgroundColor = '#eff6ff';
+        elemEmojiTxt.innerText = item.emoji || '❓';
+      }
+    }
+
+    function verificarFinDePasos() {
+      const feedback = document.getElementById('feedback');
+      feedback.style.color = '#0284c7';
+      feedback.innerText = `Progreso: (${progresoPasos}/2)`;
+
+      if (progresoPasos >= 2) {
+        feedback.style.color = '#22c55e';
+        feedback.innerText = '¡Excelente! Ambos correctos 🎉';
+        setTimeout(() => {
+          siguientePalabra();
+        }, 900);
+      }
+    }
+
+    // 1. Validar la parte escrita
+    function validarEscritura(event) {
+      event.preventDefault();
+      if (palabrasFiltradas.length === 0 || escritoCompletado) return;
+
+      const input = document.getElementById('respuesta');
+      const dicho = input.value.toLowerCase().trim();
+      const correcto = (palabrasFiltradas[indiceActual].name || '').toLowerCase().trim();
+
+      if (dicho === correcto) {
+        escritoCompletado = true;
+        progresoPasos++;
+        input.disabled = true;
+        document.getElementById('btn-escrito').disabled = true;
+        verificarFinDePasos();
+      } else {
+        const feedback = document.getElementById('feedback');
+        feedback.style.color = '#ef4444';
+        feedback.innerText = 'Escritura incorrecta ❌';
+      }
+    }
+
+    // 2. Escuchar con la bocina
+    function escucharPalabra() {
+      if (palabrasFiltradas.length === 0) return;
+      const texto = palabrasFiltradas[indiceActual].name;
+      const utterance = new SpeechSynthesisUtterance(texto);
+      utterance.lang = 'en-US';
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // 3. Pronunciar por micrófono
+    function reconocerVoz() {
+      if (palabrasFiltradas.length === 0 || habladoCompletado) return;
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRecognition) {
+        alert("El navegador no soporta micrófono.");
+        return;
+      }
+
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.start();
+
+      recognition.onresult = (event) => {
+        const dicho = event.results[0][0].transcript.toLowerCase().trim();
+        const correcto = (palabrasFiltradas[indiceActual].name || '').toLowerCase().trim();
+
+        if (dicho === correcto) {
+          habladoCompletado = true;
+          progresoPasos++;
+          verificarFinDePasos();
+        } else {
+          const feedback = document.getElementById('feedback');
+          feedback.style.color = '#ef4444';
+          feedback.innerText = `Dijiste "${dicho}". Intenta de nuevo ❌`;
+        }
+      };
+    }
+
+    function siguientePalabra() {
+      if (palabrasFiltradas.length === 0) return;
+      indiceActual++;
+      if (indiceActual >= palabrasFiltradas.length) {
+        indiceActual = 0;
+      }
+      mostrarPalabra();
+    }
+
+    function anteriorPalabra() {
+      if (palabrasFiltradas.length === 0) return;
+      indiceActual--;
+      if (indiceActual < 0) {
+        indiceActual = palabrasFiltradas.length - 1;
+      }
+      mostrarPalabra();
+    }
+
+    mostrarPalabra();
+  </script>
+
+</body>
+</html>

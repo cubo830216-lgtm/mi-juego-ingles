@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocalizar</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 360px;
+      height: 100%;
+      max-height: 500px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Caja de Emoji / Color */
+    .emoji-box {
+      width: 100%;
+      flex: 1;
+      max-height: 170px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4.5rem;
+      margin-bottom: 5px;
+      background-color: #eff6ff;
+      transition: background-color 0.3s;
+    }
+
+    .word-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #1e293b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .word-translation {
+      font-size: 1.1rem;
+      color: #64748b;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+
+    .btn-circle {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 2px solid #e2e8f0;
+      background-color: #f8fafc;
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    }
+
+    .btn-circle:active {
+      transform: scale(0.95);
+    }
+
+    /* Contenedor de botones Atrás y Siguiente */
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn-nav {
+      flex: 1;
+      background-color: #38bdf8;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn-nav:active {
+      background-color: #0284c7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div id="emoji-box" class="emoji-box">
+      <span id="emoji-txt">❓</span>
+    </div>
+
+    <div>
+      <div id="name" class="word-title">---</div>
+      <div id="translation" class="word-translation">(---)</div>
+    </div>
+
+    <div class="actions">
+      <button class="btn-circle" onclick="escucharPalabra()">🔊</button>
+      <button class="btn-circle" onclick="reconocerVoz()">🎧</button>
+    </div>
+
+    <!-- Botones de Navegación -->
+    <div class="nav-buttons">
+      <button class="btn-nav" onclick="anteriorPalabra()">⬅️ Atrás</button>
+      <button class="btn-nav" onclick="siguientePalabra()">➡️ Siguiente</button>
+    </div>
+  </div>
+
+  <script src="palabras.js"></script>
+
+  <script>
+    let palabrasFiltradas = [];
+    let indiceActual = 0;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    let grupo = urlParams.get('grupo');
+
+    if (!grupo && window.parent && window.parent.grupoSeleccionado) {
+      grupo = window.parent.grupoSeleccionado;
+    }
+
+    if (window.palabrasGlobal && Array.isArray(window.palabrasGlobal)) {
+      palabrasFiltradas = window.palabrasGlobal.filter(p => p.grupo === grupo);
+    }
+
+    function mostrarPalabra() {
+      if (palabrasFiltradas.length === 0) {
+        document.getElementById('name').innerText = "Sin datos";
+        document.getElementById('translation').innerText = "";
+        document.getElementById('emoji-txt').innerText = "⚠️";
+        return;
+      }
+
+      const item = palabrasFiltradas[indiceActual];
+      const elemName = document.getElementById('name');
+      const elemBox = document.getElementById('emoji-box');
+      const elemEmojiTxt = document.getElementById('emoji-txt');
+
+      elemName.innerText = item.name || '';
+      document.getElementById('translation').innerText = item.translation ? `(${item.translation})` : '';
+
+      // Validación del color
+      const color = (item.color || '').trim().toLowerCase();
+      const esNegro = color === '' || color === 'black' || color === '#000000' || color === '#000';
+
+      if (!esNegro) {
+        // Si el color no es negro: cambia color del texto y llena el contenedor
+        elemName.style.color = item.color;
+        elemBox.style.backgroundColor = item.color;
+        elemEmojiTxt.innerText = ''; // Oculta el emoji/?
+      } else {
+        // Restauración por defecto
+        elemName.style.color = '#1e293b';
+        elemBox.style.backgroundColor = '#eff6ff';
+        elemEmojiTxt.innerText = item.emoji || '❓';
+      }
+    }
+
+    function siguientePalabra() {
+      if (palabrasFiltradas.length === 0) return;
+      indiceActual++;
+      if (indiceActual >= palabrasFiltradas.length) {
+        indiceActual = 0;
+      }
+      mostrarPalabra();
+    }
+
+    function anteriorPalabra() {
+      if (palabrasFiltradas.length === 0) return;
+      indiceActual--;
+      if (indiceActual < 0) {
+        indiceActual = palabrasFiltradas.length - 1;
+      }
+      mostrarPalabra();
+    }
+
+    function escucharPalabra() {
+      if (palabrasFiltradas.length === 0) return;
+      const texto = palabrasFiltradas[indiceActual].name;
+      const utterance = new SpeechSynthesisUtterance(texto);
+      utterance.lang = 'en-US';
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function reconocerVoz() {
+      if (palabrasFiltradas.length === 0) return;
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRecognition) {
+        alert("El navegador no soporta micrófono.");
+        return;
+      }
+
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.start();
+
+      recognition.onresult = (event) => {
+        const dicho = event.results[0][0].transcript.toLowerCase().trim();
+        const correcto = palabrasFiltradas[indiceActual].name.toLowerCase().trim();
+
+        if (dicho === correcto) {
+          siguientePalabra();
+        } else {
+          alert(`Dijiste: "${dicho}". ¡Intenta de nuevo!`);
+        }
+      };
+    }
+
+    mostrarPalabra();
+  </script>
+
+</body>
+</html>
