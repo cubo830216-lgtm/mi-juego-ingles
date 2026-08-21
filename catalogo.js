@@ -5,5 +5,6 @@ window.catalogoGlobal = [
   { "id": 4, "titulo": "Días 1", "grupo": "D1", "emoji": "📅" },
   { "id": 5, "titulo": "Números 1", "grupo": "N1", "emoji": "🔢" },
   { "id": 6, "titulo": "Colores 1", "grupo": "C1", "emoji": "🎨" },
-  { "id": 6, "titulo": "Pronombres", "grupo": "P1", "emoji": "🗣️" }
+  { "id": 7, "titulo": "Pronombres", "grupo": "P1", "emoji": "🗣️" },
+  { "id": 8, "titulo": "Meses", "grupo": "M1", "emoji": "🗓️" }
 ];
