@@ -952,5 +952,59 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "🎄",
     "urs_imagen": null
+  },
+  {
+    "id": 110,
+    "name": "what",
+    "translation": "Qué / Cuál",
+    "grupo": "Q1",
+    "color": "#000000",
+    "emoji": "❓",
+    "urs_imagen": null
+  },
+  {
+    "id": 111,
+    "name": "when",
+    "translation": "Cuándo",
+    "grupo": "Q1",
+    "color": "#000000",
+    "emoji": "⏰",
+    "urs_imagen": null
+  },
+  {
+    "id": 112,
+    "name": "where",
+    "translation": "Dónde",
+    "grupo": "Q1",
+    "color": "#000000",
+    "emoji": "📍",
+    "urs_imagen": null
+  },
+  {
+    "id": 113,
+    "name": "how",
+    "translation": "Cómo",
+    "grupo": "Q1",
+    "color": "#000000",
+    "emoji": "⚙️",
+    "urs_imagen": null
+  },
+  {
+    "id": 114,
+    "name": "why",
+    "translation": "Por qué",
+    "grupo": "Q1",
+    "color": "#000000",
+    "emoji": "💡",
+    "urs_imagen": null
+  },
+  {
+    "id": 115,
+    "name": "who",
+    "translation": "Quién",
+    "grupo": "Q1",
+    "color": "#000000",
+    "emoji": "👤",
+    "urs_imagen": null
   }
 ];
