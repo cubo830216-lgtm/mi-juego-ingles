@@ -1348,5 +1348,176 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "🖍️",
     "urs_imagen": null
+  },
+  {
+    "id": 154,
+    "name": "hat",
+    "translation": "Sombrero",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🎩",
+    "urs_imagen": null
+  },
+  {
+    "id": 155,
+    "name": "cap",
+    "translation": "Gorra",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🧢",
+    "urs_imagen": null
+  },
+  {
+    "id": 156,
+    "name": "scarf",
+    "translation": "Bufanda / Mascada",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🧣",
+    "urs_imagen": null
+  },
+  {
+    "id": 157,
+    "name": "blouse",
+    "translation": "Blusa",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "👚",
+    "urs_imagen": null
+  },
+  {
+    "id": 158,
+    "name": "shirt",
+    "translation": "Camisa / Playera",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "👕",
+    "urs_imagen": null
+  },
+  {
+    "id": 159,
+    "name": "jacket",
+    "translation": "Chamarra / Chaqueta",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🧥",
+    "urs_imagen": null
+  },
+  {
+    "id": 160,
+    "name": "sweater",
+    "translation": "Suéter",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🧶",
+    "urs_imagen": null
+  },
+  {
+    "id": 161,
+    "name": "gloves",
+    "translation": "Guantes",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🧤",
+    "urs_imagen": null
+  },
+  {
+    "id": 162,
+    "name": "watch",
+    "translation": "Reloj",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "⌚",
+    "urs_imagen": null
+  },
+  {
+    "id": 163,
+    "name": "skirt",
+    "translation": "Falda",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "👗",
+    "urs_imagen": null
+  },
+  {
+    "id": 164,
+    "name": "dress",
+    "translation": "Vestido",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "👗",
+    "urs_imagen": null
+  },
+  {
+    "id": 165,
+    "name": "pants",
+    "translation": "Pantalón",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "👖",
+    "urs_imagen": null
+  },
+  {
+    "id": 166,
+    "name": "socks",
+    "translation": "Calcetines",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🧦",
+    "urs_imagen": null
+  },
+  {
+    "id": 167,
+    "name": "shoes",
+    "translation": "Zapatos",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "👟",
+    "urs_imagen": null
+  },
+  {
+    "id": 168,
+    "name": "sandals",
+    "translation": "Sandalias",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🩴",
+    "urs_imagen": null
+  },
+  {
+    "id": 169,
+    "name": "slippers",
+    "translation": "Pantuflas",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🥿",
+    "urs_imagen": null
+  },
+  {
+    "id": 170,
+    "name": "belt",
+    "translation": "Cinturón",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🩲",
+    "urs_imagen": null
+  },
+  {
+    "id": 171,
+    "name": "glasses",
+    "translation": "Lentes / Gafas",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "👓",
+    "urs_imagen": null
+  },
+  {
+    "id": 172,
+    "name": "boots",
+    "translation": "Botas",
+    "grupo": "R1",
+    "color": "#000000",
+    "emoji": "🥾",
+    "urs_imagen": null
   }
 ];
