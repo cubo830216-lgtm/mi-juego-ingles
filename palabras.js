@@ -1519,5 +1519,167 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "🥾",
     "urs_imagen": null
+  },
+  {
+    "id": 173,
+    "name": "head",
+    "translation": "Cabeza",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🗣️",
+    "urs_imagen": null
+  },
+  {
+    "id": 174,
+    "name": "neck",
+    "translation": "Cuello",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🥖",
+    "urs_imagen": null
+  },
+  {
+    "id": 175,
+    "name": "shoulders",
+    "translation": "Hombros",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🤷‍♂️",
+    "urs_imagen": null
+  },
+  {
+    "id": 176,
+    "name": "arms",
+    "translation": "Brazos",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "💪",
+    "urs_imagen": null
+  },
+  {
+    "id": 177,
+    "name": "hands",
+    "translation": "Manos",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "✋",
+    "urs_imagen": null
+  },
+  {
+    "id": 178,
+    "name": "fingers",
+    "translation": "Dedos de la mano",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🤌",
+    "urs_imagen": null
+  },
+  {
+    "id": 179,
+    "name": "elbows",
+    "translation": "Codos",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🦾",
+    "urs_imagen": null
+  },
+  {
+    "id": 180,
+    "name": "chest",
+    "translation": "Pecho",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🫁",
+    "urs_imagen": null
+  },
+  {
+    "id": 181,
+    "name": "waist",
+    "translation": "Cintura",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🧍",
+    "urs_imagen": null
+  },
+  {
+    "id": 182,
+    "name": "legs",
+    "translation": "Piernas",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🦵",
+    "urs_imagen": null
+  },
+  {
+    "id": 183,
+    "name": "feet",
+    "translation": "Pies",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🦶",
+    "urs_imagen": null
+  },
+  {
+    "id": 184,
+    "name": "eyes",
+    "translation": "Ojos",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "👀",
+    "urs_imagen": null
+  },
+  {
+    "id": 185,
+    "name": "nose",
+    "translation": "Nariz",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "👃",
+    "urs_imagen": null
+  },
+  {
+    "id": 186,
+    "name": "mouth",
+    "translation": "Boca",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "👄",
+    "urs_imagen": null
+  },
+  {
+    "id": 187,
+    "name": "ears",
+    "translation": "Orejas / Oídos",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "👂",
+    "urs_imagen": null
+  },
+  {
+    "id": 188,
+    "name": "hair",
+    "translation": "Cabello / Pelo",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "💇‍♀️",
+    "urs_imagen": null
+  },
+  {
+    "id": 189,
+    "name": "knees",
+    "translation": "Rodillas",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🧎",
+    "urs_imagen": null
+  },
+  {
+    "id": 190,
+    "name": "back",
+    "translation": "Espalda",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🚶‍♂️",
+    "urs_imagen": null
   }
 ];
