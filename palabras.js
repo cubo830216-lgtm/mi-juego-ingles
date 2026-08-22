@@ -1535,7 +1535,7 @@ window.palabrasGlobal = [
     "translation": "Cuello",
     "grupo": "B1",
     "color": "#000000",
-    "emoji": "🥖",
+    "emoji": "🗣️",
     "urs_imagen": null
   },
   {
