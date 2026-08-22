@@ -1681,5 +1681,194 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "🚶‍♂️",
     "urs_imagen": null
+  },
+  {
+    "id": 191,
+    "name": "love",
+    "translation": "Amor",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "❤️",
+    "urs_imagen": null
+  },
+  {
+    "id": 192,
+    "name": "hate",
+    "translation": "Odio",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "😡",
+    "urs_imagen": null
+  },
+  {
+    "id": 193,
+    "name": "angry",
+    "translation": "Enojado",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "🤬",
+    "urs_imagen": null
+  },
+  {
+    "id": 194,
+    "name": "sad",
+    "translation": "Triste",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "😢",
+    "urs_imagen": null
+  },
+  {
+    "id": 195,
+    "name": "happy",
+    "translation": "Contento",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "😄",
+    "urs_imagen": null
+  },
+  {
+    "id": 196,
+    "name": "tired",
+    "translation": "Cansado",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "🥱",
+    "urs_imagen": null
+  },
+  {
+    "id": 197,
+    "name": "scared",
+    "translation": "Asustado",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "😨",
+    "urs_imagen": null
+  },
+  {
+    "id": 198,
+    "name": "surprised",
+    "translation": "Sorprendido",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "😲",
+    "urs_imagen": null
+  },
+  {
+    "id": 199,
+    "name": "bored",
+    "translation": "Aburrido",
+    "grupo": "EM1",
+    "color": "#000000",
+    "emoji": "🥱",
+    "urs_imagen": null
+  },
+  {
+    "id": 200,
+    "name": "ears",
+    "translation": "Oídos / Orejas",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "👂",
+    "urs_imagen": null
+  },
+  {
+    "id": 201,
+    "name": "teeth",
+    "translation": "Dientes",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🦷",
+    "urs_imagen": null
+  },
+  {
+    "id": 202,
+    "name": "toe",
+    "translation": "Dedo del pie",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🦶",
+    "urs_imagen": null
+  },
+  {
+    "id": 203,
+    "name": "foot",
+    "translation": "Pie",
+    "grupo": "B1",
+    "color": "#000000",
+    "emoji": "🦶",
+    "urs_imagen": null
+  },
+  {
+    "id": 204,
+    "name": "hungry",
+    "translation": "Hambre",
+    "grupo": "S1",
+    "color": "#000000",
+    "emoji": "🍔",
+    "urs_imagen": null
+  },
+  {
+    "id": 205,
+    "name": "thirsty",
+    "translation": "Sed",
+    "grupo": "S1",
+    "color": "#000000",
+    "emoji": "🥤",
+    "urs_imagen": null
+  },
+  {
+    "id": 206,
+    "name": "cold",
+    "translation": "Frío",
+    "grupo": "S1",
+    "color": "#000000",
+    "emoji": "🥶",
+    "urs_imagen": null
+  },
+  {
+    "id": 207,
+    "name": "hot",
+    "translation": "Calor",
+    "grupo": "S1",
+    "color": "#000000",
+    "emoji": "🥵",
+    "urs_imagen": null
+  },
+  {
+    "id": 208,
+    "name": "sleepy",
+    "translation": "Sueño",
+    "grupo": "S1",
+    "color": "#000000",
+    "emoji": "😴",
+    "urs_imagen": null
+  },
+  {
+    "id": 209,
+    "name": "tired",
+    "translation": "Cansancio",
+    "grupo": "S1",
+    "color": "#000000",
+    "emoji": "🥱",
+    "urs_imagen": null
+  },
+  {
+    "id": 210,
+    "name": "sick",
+    "translation": "Enfermo",
+    "grupo": "S1",
+    "color": "#000000",
+    "emoji": "🤒",
+    "urs_imagen": null
+  },
+  {
+    "id": 211,
+    "name": "dizzy",
+    "translation": "Mareado",
+    "grupo": "S1",
+    "color": "#000000",
+    "emoji": "💫",
+    "urs_imagen": null
   }
 ];
