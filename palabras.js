@@ -1499,7 +1499,7 @@ window.palabrasGlobal = [
     "translation": "Cinturón",
     "grupo": "R1",
     "color": "#000000",
-    "emoji": "🩲",
+    "emoji": "👖",
     "urs_imagen": null
   },
   {
