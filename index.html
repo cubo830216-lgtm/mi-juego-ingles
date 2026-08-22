@@ -62,9 +62,19 @@
       border: 1px solid #f8a5c2;
       z-index: 100;
     }
-    .menu-item:hover .sub-menu {
+    
+    /* Despliegue controlado por clase .open */
+    .menu-item.open .sub-menu {
       display: block;
     }
+
+    /* En PC mantiene el hover automático */
+    @media (hover: hover) {
+      .menu-item:hover .sub-menu {
+        display: block;
+      }
+    }
+
     .sub-menu a {
       color: #d81b60;
       padding: 10px 15px;
@@ -93,22 +103,21 @@
 
   <!-- Frame 1: Título -->
   <header>
-    <h1>¡ Hola, Madison ..!</h1>
+    <h1>¡ Hola, Madison ......!</h1>
   </header>
 
   <!-- Frame 2: Menú desplegable -->
   <nav class="barramenu">
     <div class="menu-item">
-      <button class="menu-btn">🗣️ Vocalizar</button>
+      <button class="menu-btn" onclick="toggleMenu(this)">🗣️ Vocalizar</button>
       <div id="sub-vocalizar" class="sub-menu"></div>
     </div>
     <div class="menu-item">
-      <button class="menu-btn">✏️ Escribir</button>
+      <button class="menu-btn" onclick="toggleMenu(this)">✏️ Escribir</button>
       <div id="sub-escribir" class="sub-menu"></div>
     </div>
-    <!-- Opción Mixto con submenú -->
     <div class="menu-item">
-      <button class="menu-btn">🔄 Mixto</button>
+      <button class="menu-btn" onclick="toggleMenu(this)">🔄 Mixto</button>
       <div id="sub-mixto" class="sub-menu"></div>
     </div>
   </nav>
@@ -121,58 +130,76 @@
   <!-- Carga del catálogo local -->
   <script src="catalogo.js"></script>
   <script>
-    // Variable GLOBAL para guardar el grupo activo
     window.grupoSeleccionado = "";
 
-    // Función para actualizar la variable global y replegar el menú
-    function seleccionarGrupo(grupo, pagina, submenuEl) {
+    // Abrir/cerrar submenús con clic o toque sin depender de CSS :hover en móviles
+    function toggleMenu(button) {
+      const currentItem = button.parentElement;
+      const isOpen = currentItem.classList.contains('open');
+      
+      cerrarTodosLosMenus();
+
+      if (!isOpen) {
+        currentItem.classList.add('open');
+      }
+    }
+
+    function cerrarTodosLosMenus() {
+      document.querySelectorAll('.menu-item').forEach(item => {
+        item.classList.remove('open');
+      });
+    }
+
+    function seleccionarGrupo(grupo, pagina) {
       window.grupoSeleccionado = grupo;
       console.log("Grupo seleccionado actualmente:", window.grupoSeleccionado);
       
-      // Carga la página correspondiente en el iframe
+      // Cambia el contenido del iframe
       document.getElementById('frame-cuerpo').src = `${pagina}?grupo=${grupo}`;
 
-      // Oculta temporalmente el submenú para romper el :hover de Chrome en móviles
-      if (submenuEl) {
-        submenuEl.style.display = 'none';
-        setTimeout(() => {
-          submenuEl.style.display = '';
-        }, 300);
-      }
+      // Cierra inmediatamente los submenús eliminando la clase
+      cerrarTodosLosMenus();
       if (document.activeElement) document.activeElement.blur();
     }
+
+    // Cierra el menú si se hace clic fuera de la barra de navegación
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.barramenu')) {
+        cerrarTodosLosMenus();
+      }
+    });
 
     const subVocalizar = document.getElementById('sub-vocalizar');
     const subEscribir = document.getElementById('sub-escribir');
     const subMixto = document.getElementById('sub-mixto');
 
-    // Construcción dinámica de los tres submenús
+    // Construcción dinámica de las opciones
     if (window.catalogoGlobal && Array.isArray(window.catalogoGlobal)) {
       window.catalogoGlobal.forEach(cat => {
-        // Enlace para Vocalizar
+        // Enlace Vocalizar
         const aVocalizar = document.createElement('a');
         aVocalizar.innerText = `${cat.emoji || ''} ${cat.titulo}`;
         aVocalizar.onclick = (e) => {
           e.preventDefault();
-          seleccionarGrupo(cat.grupo, 'vocalizar.html', subVocalizar);
+          seleccionarGrupo(cat.grupo, 'vocalizar.html');
         };
         subVocalizar.appendChild(aVocalizar);
 
-        // Enlace para Escribir
+        // Enlace Escribir
         const aEscribir = document.createElement('a');
         aEscribir.innerText = `${cat.emoji || ''} ${cat.titulo}`;
         aEscribir.onclick = (e) => {
           e.preventDefault();
-          seleccionarGrupo(cat.grupo, 'escribir.html', subEscribir);
+          seleccionarGrupo(cat.grupo, 'escribir.html');
         };
         subEscribir.appendChild(aEscribir);
 
-        // Enlace para Mixto
+        // Enlace Mixto
         const aMixto = document.createElement('a');
         aMixto.innerText = `${cat.emoji || ''} ${cat.titulo}`;
         aMixto.onclick = (e) => {
           e.preventDefault();
-          seleccionarGrupo(cat.grupo, 'mixto.html', subMixto);
+          seleccionarGrupo(cat.grupo, 'mixto.html');
         };
         subMixto.appendChild(aMixto);
       });
