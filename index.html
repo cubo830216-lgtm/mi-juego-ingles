@@ -5,108 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi App Dinámica</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; height: 100vh; display: flex; flex-direction: column; }
     
-    /* Frame 1: Título Superior */
-    header {
-      height: 50px;
-      background-color: #ffc0cb;
-      color: #d81b60;
+    header { height: 50px; background-color: #ffc0cb; color: #d81b60; display: flex; align-items: center; justify-content: center; }
+    
+    nav.barramenu { background-color: #ffc0cb; border-bottom: 2px solid #f8a5c2; display: flex; }
+    
+    .menu-item { position: relative; }
+    .menu-btn { background: none; border: none; padding: 10px 20px; font-size: 1rem; font-weight: bold; cursor: pointer; color: #d81b60; }
+    .menu-btn:hover { background-color: #f8a5c2; }
+    
+    /* Submenú Nivel 1 */
+    .sub-menu { 
+      display: none; 
+      position: absolute; 
+      top: 100%; 
+      left: 0; 
+      background-color: #ffc0cb; 
+      min-width: 180px; 
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.15); 
+      border: 1px solid #f8a5c2; 
+      z-index: 100; 
+    }
+    .menu-item.open .sub-menu { display: block; }
+    @media (hover: hover) { .menu-item:hover .sub-menu { display: block; } }
+
+    .sub-menu a, .sub-menu .submenu-padre { 
+      color: #d81b60; 
+      padding: 10px 15px; 
+      text-decoration: none; 
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-    }
-    
-    /* Frame 2: Menú Horizontal Superior */
-    nav.barramenu {
-      background-color: #ffc0cb;
-      border-bottom: 2px solid #f8a5c2;
-      display: flex;
-    }
-    .menu-item {
+      font-size: 0.9rem; 
+      cursor: pointer; 
       position: relative;
     }
-    .menu-btn {
-      background: none;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      color: #d81b60;
-      display: inline-block;
+
+    .sub-menu a:hover, .sub-menu .submenu-padre:hover { 
+      background-color: #d81b60; 
+      color: white; 
     }
-    .menu-btn:hover {
-      background-color: #f8a5c2;
-    }
-    
-    /* Submenú desplegable flotante */
-    .sub-menu {
+
+    /* Submenú Nivel 2 (Desplegable Lateral para Verbos 1, Verbos 2, etc.) */
+    .submenu-hijos {
       display: none;
       position: absolute;
-      top: 100%;
-      left: 0;
+      left: 100%;
+      top: 0;
       background-color: #ffc0cb;
-      min-width: 180px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+      min-width: 160px;
       border: 1px solid #f8a5c2;
-      z-index: 100;
-    }
-    
-    /* Despliegue controlado por clase .open */
-    .menu-item.open .sub-menu {
-      display: block;
+      box-shadow: 2px 4px 8px rgba(0,0,0,0.15);
     }
 
-    /* En PC mantiene el hover automático */
-    @media (hover: hover) {
-      .menu-item:hover .sub-menu {
-        display: block;
-      }
-    }
+    /* Al pasar el mouse sobre la categoría Padre (ej. Verbos), abre sus Hijos */
+    .submenu-padre-wrapper { position: relative; }
+    .submenu-padre-wrapper:hover .submenu-hijos { display: block; }
 
-    .sub-menu a {
-      color: #d81b60;
-      padding: 10px 15px;
-      text-decoration: none;
-      display: block;
-      font-size: 0.9rem;
-      cursor: pointer;
-    }
-    .sub-menu a:hover {
-      background-color: #d81b60;
-      color: white;
-    }
-    
-    /* Frame 3: Body / Main */
-    main {
-      flex: 1;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+    main { flex: 1; }
+    iframe { width: 100%; height: 100%; border: none; }
   </style>
 </head>
 <body>
 
-  <!-- Frame 1: Título -->
-  <header>
-    <h1>¡ Hola, Madison ......!</h1>
-  </header>
+  <header><h1>¡ Hola, Madison ..!</h1></header>
 
-  <!-- Frame 2: Menú desplegable -->
   <nav class="barramenu">
     <div class="menu-item">
       <button class="menu-btn" onclick="toggleMenu(this)">🗣️ Vocalizar</button>
@@ -122,88 +87,102 @@
     </div>
   </nav>
 
-  <!-- Frame 3: Cuerpo donde cargan los html -->
   <main>
     <iframe name="cuerpo" id="frame-cuerpo" src="about:blank"></iframe>
   </main>
 
-  <!-- Carga del catálogo local -->
+  <!-- Enlace al catálogo local -->
   <script src="catalogo.js"></script>
   <script>
     window.grupoSeleccionado = "";
 
-    // Abrir/cerrar submenús con clic o toque sin depender de CSS :hover en móviles
     function toggleMenu(button) {
       const currentItem = button.parentElement;
       const isOpen = currentItem.classList.contains('open');
-      
       cerrarTodosLosMenus();
-
-      if (!isOpen) {
-        currentItem.classList.add('open');
-      }
+      if (!isOpen) currentItem.classList.add('open');
     }
 
     function cerrarTodosLosMenus() {
-      document.querySelectorAll('.menu-item').forEach(item => {
-        item.classList.remove('open');
-      });
+      document.querySelectorAll('.menu-item').forEach(item => item.classList.remove('open'));
     }
 
     function seleccionarGrupo(grupo, pagina) {
       window.grupoSeleccionado = grupo;
-      console.log("Grupo seleccionado actualmente:", window.grupoSeleccionado);
-      
-      // Cambia el contenido del iframe
       document.getElementById('frame-cuerpo').src = `${pagina}?grupo=${grupo}`;
-
-      // Cierra inmediatamente los submenús eliminando la clase
       cerrarTodosLosMenus();
-      if (document.activeElement) document.activeElement.blur();
     }
 
-    // Cierra el menú si se hace clic fuera de la barra de navegación
     document.addEventListener('click', (e) => {
-      if (!e.target.closest('.barramenu')) {
-        cerrarTodosLosMenus();
-      }
+      if (!e.target.closest('.barramenu')) cerrarTodosLosMenus();
     });
 
-    const subVocalizar = document.getElementById('sub-vocalizar');
-    const subEscribir = document.getElementById('sub-escribir');
-    const subMixto = document.getElementById('sub-mixto');
+    document.addEventListener('DOMContentLoaded', () => {
+      const datos = window.catalogoGlobal || window.palabrasGlobal;
 
-    // Construcción dinámica de las opciones
-    if (window.catalogoGlobal && Array.isArray(window.catalogoGlobal)) {
-      window.catalogoGlobal.forEach(cat => {
-        // Enlace Vocalizar
-        const aVocalizar = document.createElement('a');
-        aVocalizar.innerText = `${cat.emoji || ''} ${cat.titulo}`;
-        aVocalizar.onclick = (e) => {
-          e.preventDefault();
-          seleccionarGrupo(cat.grupo, 'vocalizar.html');
-        };
-        subVocalizar.appendChild(aVocalizar);
+      if (datos && Array.isArray(datos)) {
+        const subVocalizar = document.getElementById('sub-vocalizar');
+        const subEscribir = document.getElementById('sub-escribir');
+        const subMixto = document.getElementById('sub-mixto');
 
-        // Enlace Escribir
-        const aEscribir = document.createElement('a');
-        aEscribir.innerText = `${cat.emoji || ''} ${cat.titulo}`;
-        aEscribir.onclick = (e) => {
-          e.preventDefault();
-          seleccionarGrupo(cat.grupo, 'escribir.html');
-        };
-        subEscribir.appendChild(aEscribir);
+        // Padres (X) e Hijos
+        const padres = datos.filter(cat => cat.grupo && cat.grupo.startsWith('X'));
+        const normales = datos.filter(cat => cat.grupo && !cat.grupo.startsWith('X'));
 
-        // Enlace Mixto
-        const aMixto = document.createElement('a');
-        aMixto.innerText = `${cat.emoji || ''} ${cat.titulo}`;
-        aMixto.onclick = (e) => {
-          e.preventDefault();
-          seleccionarGrupo(cat.grupo, 'mixto.html');
-        };
-        subMixto.appendChild(aMixto);
-      });
-    }
+        function armarMenu(contenedor, pagina) {
+          contenedor.innerHTML = '';
+          
+          // 1. Crear las categorías con submenús desplegables (Verbos, Colores, etc.)
+          padres.forEach(padre => {
+            const prefijo = padre.grupo.substring(1); // "XV" -> "V"
+            const hijos = normales.filter(h => h.grupo.startsWith(prefijo));
+
+            if (hijos.length > 0) {
+              const wrapper = document.createElement('div');
+              wrapper.className = 'submenu-padre-wrapper';
+
+              const btnPadre = document.createElement('div');
+              btnPadre.className = 'submenu-padre';
+              btnPadre.innerHTML = `<span>${padre.emoji || ''} ${padre.titulo}</span> <span>▶</span>`;
+              wrapper.appendChild(btnPadre);
+
+              // Submenú flotante lateral para Verbos 1, Verbos 2, etc.
+              const contenedorHijos = document.createElement('div');
+              contenedorHijos.className = 'submenu-hijos';
+
+              hijos.forEach(h => {
+                const aHijo = document.createElement('a');
+                aHijo.innerText = `${h.emoji || ''} ${h.titulo}`;
+                aHijo.onclick = (e) => {
+                  e.preventDefault();
+                  seleccionarGrupo(h.grupo, pagina);
+                };
+                contenedorHijos.appendChild(aHijo);
+              });
+
+              wrapper.appendChild(contenedorHijos);
+              contenedor.appendChild(wrapper);
+            }
+          });
+
+          // 2. Opciones sueltas que no pertenecen a ningún padre (ejemplo: Días)
+          const huérfanos = normales.filter(h => !padres.some(p => h.grupo.startsWith(p.grupo.substring(1))));
+          huérfanos.forEach(cat => {
+            const a = document.createElement('a');
+            a.innerText = `${cat.emoji || ''} ${cat.titulo}`;
+            a.onclick = (e) => {
+              e.preventDefault();
+              seleccionarGrupo(cat.grupo, pagina);
+            };
+            contenedor.appendChild(a);
+          });
+        }
+
+        armarMenu(subVocalizar, 'vocalizar.html');
+        armarMenu(subEscribir, 'escribir.html');
+        armarMenu(subMixto, 'mixto.html');
+      }
+    });
   </script>
 </body>
 </html>
