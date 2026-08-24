@@ -17,7 +17,7 @@
       flex-direction: column;
     }
     
-    /* Frame 1: Título Superior */
+    /* Frame 1: Encabezado */
     header {
       height: 50px;
       background-color: #ffc0cb;
@@ -27,7 +27,7 @@
       justify-content: center;
     }
     
-    /* Frame 2: Menú Horizontal Superior */
+    /* Frame 2: Navegación Principal */
     nav.barramenu {
       background-color: #ffc0cb;
       border-bottom: 2px solid #f8a5c2;
@@ -49,7 +49,7 @@
       background-color: #f8a5c2;
     }
     
-    /* Submenú Nivel 1 (Vocalizar, Escribir, Mixto) */
+    /* Submenú Nivel 1 */
     .sub-menu {
       display: none;
       position: absolute;
@@ -107,14 +107,14 @@
       display: block;
     }
 
-    /* Regla para desplegar hacia la izquierda cuando no haya espacio a la derecha */
+    /* Clase CSS que invierte la apertura si falta espacio a la derecha */
     .submenu-hijos.abrir-izquierda {
       left: auto !important;
       right: 100% !important;
       box-shadow: -2px 4px 8px rgba(0,0,0,0.15) !important;
     }
 
-    /* Frame 3: Cuerpo principal */
+    /* Frame 3: Iframe principal */
     main {
       flex: 1;
     }
@@ -127,12 +127,10 @@
 </head>
 <body>
 
-  <!-- Frame 1: Encabezado -->
   <header>
     <h1>¡ Hola, Madison ..!</h1>
   </header>
 
-  <!-- Frame 2: Menú de Navegación -->
   <nav class="barramenu">
     <div class="menu-item">
       <button class="menu-btn" onclick="toggleMenu(this)">🗣️ Vocalizar</button>
@@ -148,12 +146,10 @@
     </div>
   </nav>
 
-  <!-- Frame 3: Vista de contenido -->
   <main>
     <iframe name="cuerpo" id="frame-cuerpo" src="about:blank"></iframe>
   </main>
 
-  <!-- Carga del archivo de datos -->
   <script src="catalogo.js"></script>
   <script>
     window.grupoSeleccionado = "";
@@ -188,16 +184,15 @@
         const subEscribir = document.getElementById('sub-escribir');
         const subMixto = document.getElementById('sub-mixto');
 
-        // Separación de padres ("X") e hijos
         const padres = datos.filter(cat => cat.grupo && cat.grupo.startsWith('X'));
         const normales = datos.filter(cat => cat.grupo && !cat.grupo.startsWith('X'));
 
-        function armarMenu(contenedor, pagina) {
+        // Parámetro "detectarEspacio": controla si se evalúa el borde derecho
+        function armarMenu(contenedor, pagina, detectarEspacio = false) {
           contenedor.innerHTML = '';
           
-          // 1. Crear submenús laterales para categorías Padre (XV, XC, etc.)
           padres.forEach(padre => {
-            const prefijo = padre.grupo.substring(1); // "XV" -> "V"
+            const prefijo = padre.grupo.substring(1);
             const hijos = normales.filter(h => h.grupo.startsWith(prefijo));
 
             if (hijos.length > 0) {
@@ -224,24 +219,24 @@
 
               wrapper.appendChild(contenedorHijos);
 
-              // Detección de espacio disponible en pantalla
-              wrapper.addEventListener('mouseenter', () => {
-                const rect = wrapper.getBoundingClientRect();
-                const anchoPantalla = window.innerWidth || document.documentElement.clientWidth;
-                
-                // Si el espacio hacia la derecha no es suficiente para 160px, abre a la izquierda
-                if (rect.right + 160 > anchoPantalla) {
-                  contenedorHijos.classList.add('abrir-izquierda');
-                } else {
-                  contenedorHijos.classList.remove('abrir-izquierda');
-                }
-              });
+              // Solo evalúa si detectarEspacio es true (Escribir y Mixto)
+              if (detectarEspacio) {
+                wrapper.addEventListener('mouseenter', () => {
+                  const rect = wrapper.getBoundingClientRect();
+                  const anchoPantalla = window.innerWidth || document.documentElement.clientWidth;
+                  
+                  if (rect.right + 160 > anchoPantalla) {
+                    contenedorHijos.classList.add('abrir-izquierda');
+                  } else {
+                    contenedorHijos.classList.remove('abrir-izquierda');
+                  }
+                });
+              }
 
               contenedor.appendChild(wrapper);
             }
           });
 
-          // 2. Opciones directas/sueltas sin categoría Padre
           const huerfanos = normales.filter(h => !padres.some(p => h.grupo.startsWith(p.grupo.substring(1))));
           huerfanos.forEach(cat => {
             const a = document.createElement('a');
@@ -254,11 +249,12 @@
           });
         }
 
-        armarMenu(subVocalizar, 'vocalizar.html');
-        armarMenu(subEscribir, 'escribir.html');
-        armarMenu(subMixto, 'mixto.html');
+        // --- LLAMADAS CON CONTROL DE EVALUACIÓN ---
+        armarMenu(subVocalizar, 'vocalizar.html', false); // Menú 1: Siempre a la derecha
+        armarMenu(subEscribir, 'escribir.html', true);     // Menú 2: Evalúa espacio
+        armarMenu(subMixto, 'mixto.html', true);          // Menú 3: Evalúa espacio
       }
     });
   </script>
 </body>
-</html>
+</html>a
