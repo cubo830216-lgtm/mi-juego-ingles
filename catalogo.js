@@ -2,7 +2,7 @@ window.catalogoGlobal = [
   // --- PADRES (Inician con "X") ---
   { id: 19, titulo: "Verbos", grupo: "XV", emoji: "🏃" },
   { id: 20, titulo: "Colores", grupo: "XC", emoji: "🎨" },
-  { id: 20, titulo: "Grmatica", grupo: "XG", emoji: "🎨" },
+  { id: 20, titulo: "Gramatica", grupo: "XG", emoji: "🎨" },
   // --- Hijjos
   { "id": 1, "titulo": "Verbos 1", "grupo": "V1", "emoji": "🏃" },
   { "id": 11, "titulo": "Verbos 2", "grupo": "V2", "emoji": "🏃" },
