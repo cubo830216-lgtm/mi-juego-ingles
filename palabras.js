@@ -1524,7 +1524,7 @@ window.palabrasGlobal = [
     "id": 173,
     "name": "head",
     "translation": "Cabeza",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🗣️",
     "urs_imagen": null
@@ -1533,7 +1533,7 @@ window.palabrasGlobal = [
     "id": 174,
     "name": "neck",
     "translation": "Cuello",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🗣️",
     "urs_imagen": null
@@ -1542,7 +1542,7 @@ window.palabrasGlobal = [
     "id": 175,
     "name": "shoulders",
     "translation": "Hombros",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🤷‍♂️",
     "urs_imagen": null
@@ -1551,7 +1551,7 @@ window.palabrasGlobal = [
     "id": 176,
     "name": "arms",
     "translation": "Brazos",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "💪",
     "urs_imagen": null
@@ -1560,7 +1560,7 @@ window.palabrasGlobal = [
     "id": 177,
     "name": "hands",
     "translation": "Manos",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "✋",
     "urs_imagen": null
@@ -1569,7 +1569,7 @@ window.palabrasGlobal = [
     "id": 178,
     "name": "fingers",
     "translation": "Dedos de la mano",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🤌",
     "urs_imagen": null
@@ -1578,7 +1578,7 @@ window.palabrasGlobal = [
     "id": 179,
     "name": "elbows",
     "translation": "Codos",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🦾",
     "urs_imagen": null
@@ -1587,7 +1587,7 @@ window.palabrasGlobal = [
     "id": 180,
     "name": "chest",
     "translation": "Pecho",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🫁",
     "urs_imagen": null
@@ -1596,7 +1596,7 @@ window.palabrasGlobal = [
     "id": 181,
     "name": "waist",
     "translation": "Cintura",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🧍",
     "urs_imagen": null
@@ -1605,7 +1605,7 @@ window.palabrasGlobal = [
     "id": 182,
     "name": "legs",
     "translation": "Piernas",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🦵",
     "urs_imagen": null
@@ -1614,7 +1614,7 @@ window.palabrasGlobal = [
     "id": 183,
     "name": "feet",
     "translation": "Pies",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🦶",
     "urs_imagen": null
@@ -1623,7 +1623,7 @@ window.palabrasGlobal = [
     "id": 184,
     "name": "eyes",
     "translation": "Ojos",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "👀",
     "urs_imagen": null
@@ -1632,7 +1632,7 @@ window.palabrasGlobal = [
     "id": 185,
     "name": "nose",
     "translation": "Nariz",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "👃",
     "urs_imagen": null
@@ -1641,7 +1641,7 @@ window.palabrasGlobal = [
     "id": 186,
     "name": "mouth",
     "translation": "Boca",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "👄",
     "urs_imagen": null
@@ -1650,7 +1650,7 @@ window.palabrasGlobal = [
     "id": 187,
     "name": "ears",
     "translation": "Orejas / Oídos",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "👂",
     "urs_imagen": null
@@ -1659,7 +1659,7 @@ window.palabrasGlobal = [
     "id": 188,
     "name": "hair",
     "translation": "Cabello / Pelo",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "💇‍♀️",
     "urs_imagen": null
@@ -1668,7 +1668,7 @@ window.palabrasGlobal = [
     "id": 189,
     "name": "knees",
     "translation": "Rodillas",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🧎",
     "urs_imagen": null
@@ -1677,7 +1677,7 @@ window.palabrasGlobal = [
     "id": 190,
     "name": "back",
     "translation": "Espalda",
-    "grupo": "B1",
+    "grupo": "H1",
     "color": "#000000",
     "emoji": "🚶‍♂️",
     "urs_imagen": null
@@ -1686,7 +1686,7 @@ window.palabrasGlobal = [
     "id": 191,
     "name": "love",
     "translation": "Amor",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "❤️",
     "urs_imagen": null
@@ -1695,7 +1695,7 @@ window.palabrasGlobal = [
     "id": 192,
     "name": "hate",
     "translation": "Odio",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "😡",
     "urs_imagen": null
@@ -1704,7 +1704,7 @@ window.palabrasGlobal = [
     "id": 193,
     "name": "angry",
     "translation": "Enojado",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "🤬",
     "urs_imagen": null
@@ -1713,7 +1713,7 @@ window.palabrasGlobal = [
     "id": 194,
     "name": "sad",
     "translation": "Triste",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "😢",
     "urs_imagen": null
@@ -1722,7 +1722,7 @@ window.palabrasGlobal = [
     "id": 195,
     "name": "happy",
     "translation": "Contento",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "😄",
     "urs_imagen": null
@@ -1731,7 +1731,7 @@ window.palabrasGlobal = [
     "id": 196,
     "name": "tired",
     "translation": "Cansado",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "🥱",
     "urs_imagen": null
@@ -1740,7 +1740,7 @@ window.palabrasGlobal = [
     "id": 197,
     "name": "scared",
     "translation": "Asustado",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "😨",
     "urs_imagen": null
@@ -1749,7 +1749,7 @@ window.palabrasGlobal = [
     "id": 198,
     "name": "surprised",
     "translation": "Sorprendido",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "😲",
     "urs_imagen": null
@@ -1758,7 +1758,7 @@ window.palabrasGlobal = [
     "id": 199,
     "name": "bored",
     "translation": "Aburrido",
-    "grupo": "EM1",
+    "grupo": "H2",
     "color": "#000000",
     "emoji": "🥱",
     "urs_imagen": null
@@ -1803,7 +1803,7 @@ window.palabrasGlobal = [
     "id": 204,
     "name": "hungry",
     "translation": "Hambre",
-    "grupo": "S1",
+    "grupo": "H3",
     "color": "#000000",
     "emoji": "🍔",
     "urs_imagen": null
@@ -1812,7 +1812,7 @@ window.palabrasGlobal = [
     "id": 205,
     "name": "thirsty",
     "translation": "Sed",
-    "grupo": "S1",
+    "grupo": "H3",
     "color": "#000000",
     "emoji": "🥤",
     "urs_imagen": null
@@ -1821,7 +1821,7 @@ window.palabrasGlobal = [
     "id": 206,
     "name": "cold",
     "translation": "Frío",
-    "grupo": "S1",
+    "grupo": "H3",
     "color": "#000000",
     "emoji": "🥶",
     "urs_imagen": null
@@ -1830,7 +1830,7 @@ window.palabrasGlobal = [
     "id": 207,
     "name": "hot",
     "translation": "Calor",
-    "grupo": "S1",
+    "grupo": "H3",
     "color": "#000000",
     "emoji": "🥵",
     "urs_imagen": null
@@ -1839,7 +1839,7 @@ window.palabrasGlobal = [
     "id": 208,
     "name": "sleepy",
     "translation": "Sueño",
-    "grupo": "S1",
+    "grupo": "H3",
     "color": "#000000",
     "emoji": "😴",
     "urs_imagen": null
@@ -1848,7 +1848,7 @@ window.palabrasGlobal = [
     "id": 209,
     "name": "tired",
     "translation": "Cansancio",
-    "grupo": "S1",
+    "grupo": "H3",
     "color": "#000000",
     "emoji": "🥱",
     "urs_imagen": null
@@ -1857,7 +1857,7 @@ window.palabrasGlobal = [
     "id": 210,
     "name": "sick",
     "translation": "Enfermo",
-    "grupo": "S1",
+    "grupo": "H3",
     "color": "#000000",
     "emoji": "🤒",
     "urs_imagen": null
@@ -1866,7 +1866,7 @@ window.palabrasGlobal = [
     "id": 211,
     "name": "dizzy",
     "translation": "Mareado",
-    "grupo": "S1",
+    "grupo": "H3",
     "color": "#000000",
     "emoji": "💫",
     "urs_imagen": null
