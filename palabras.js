@@ -1011,7 +1011,7 @@ window.palabrasGlobal = [
     "id": 116,
     "name": "do",
     "translation": "Hacer",
-    "grupo": "X1",
+    "grupo": "G1",
     "color": "#000000",
     "emoji": "🛠️",
     "urs_imagen": null
@@ -1020,7 +1020,7 @@ window.palabrasGlobal = [
     "id": 117,
     "name": "not",
     "translation": "No",
-    "grupo": "X1",
+    "grupo": "G1",
     "color": "#000000",
     "emoji": "🚫",
     "urs_imagen": null
@@ -1029,7 +1029,7 @@ window.palabrasGlobal = [
     "id": 118,
     "name": "will",
     "translation": "Futuro",
-    "grupo": "X1",
+    "grupo": "G1",
     "color": "#000000",
     "emoji": "🚀",
     "urs_imagen": null
@@ -1038,7 +1038,7 @@ window.palabrasGlobal = [
     "id": 119,
     "name": "can",
     "translation": "Poder",
-    "grupo": "X1",
+    "grupo": "G1",
     "color": "#000000",
     "emoji": "💪",
     "urs_imagen": null
@@ -1047,7 +1047,7 @@ window.palabrasGlobal = [
     "id": 120,
     "name": "don't",
     "translation": "No hagas",
-    "grupo": "X1",
+    "grupo": "G1",
     "color": "#000000",
     "emoji": "❌",
     "urs_imagen": null
@@ -1056,7 +1056,7 @@ window.palabrasGlobal = [
     "id": 121,
     "name": "can't",
     "translation": "No poder",
-    "grupo": "X1",
+    "grupo": "G1",
     "color": "#000000",
     "emoji": "🚫",
     "urs_imagen": null
