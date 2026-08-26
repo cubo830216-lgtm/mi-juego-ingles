@@ -777,7 +777,7 @@ window.palabrasGlobal = [
     "id": 90,
     "name": "I",
     "translation": "yo",
-    "grupo": "P1",
+    "grupo": "G2",
     "color": "#000000",
     "emoji": "🙋‍♂️",
     "urs_imagen": null
@@ -786,7 +786,7 @@ window.palabrasGlobal = [
     "id": 91,
     "name": "You",
     "translation": "tu",
-    "grupo": "P1",
+    "grupo": "G2",
     "color": "#000000",
     "emoji": "🫵",
     "urs_imagen": null
@@ -795,7 +795,7 @@ window.palabrasGlobal = [
     "id": 92,
     "name": "He",
     "translation": "el",
-    "grupo": "P1",
+    "grupo": "G2",
     "color": "#000000",
     "emoji": "👨",
     "urs_imagen": null
@@ -804,7 +804,7 @@ window.palabrasGlobal = [
     "id": 93,
     "name": "She",
     "translation": "ella",
-    "grupo": "P1",
+    "grupo": "G2",
     "color": "#000000",
     "emoji": "👩",
     "urs_imagen": null
@@ -813,7 +813,7 @@ window.palabrasGlobal = [
     "id": 94,
     "name": "It",
     "translation": "eso",
-    "grupo": "P1",
+    "grupo": "G2",
     "color": "#000000",
     "emoji": "📦",
     "urs_imagen": null
@@ -822,7 +822,7 @@ window.palabrasGlobal = [
     "id": 95,
     "name": "We",
     "translation": "nosotros",
-    "grupo": "P1",
+    "grupo": "G2",
     "color": "#000000",
     "emoji": "👥",
     "urs_imagen": null
@@ -831,7 +831,7 @@ window.palabrasGlobal = [
     "id": 96,
     "name": "You",
     "translation": "ustedes",
-    "grupo": "P1",
+    "grupo": "G2",
     "color": "#000000",
     "emoji": "👥",
     "urs_imagen": null
@@ -840,7 +840,7 @@ window.palabrasGlobal = [
     "id": 97,
     "name": "They",
     "translation": "ellos",
-    "grupo": "P1",
+    "grupo": "G2",
     "color": "#000000",
     "emoji": "🧑‍🤝‍🧑",
     "urs_imagen": null
