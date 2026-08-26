@@ -11,7 +11,7 @@ window.catalogoGlobal = [
   { "id": 11, "titulo": "Verbos 2", "grupo": "V2", "emoji": "🏃" },
   { "id": 6, "titulo": "Colores 1", "grupo": "C1", "emoji": "🎨" },
   { "id": 12, "titulo": "Colores 2", "grupo": "C2", "emoji": "🎨" },
-  { "id": 12, "titulo": "Colores 3", "grupo": "C3", "emoji": "🎨" },
+  { "id": 28, "titulo": "Colores 3", "grupo": "C3", "emoji": "🎨" },
   { "id": 10, "titulo": "Auxiliares", "grupo": "G1", "emoji": "⚡" },
   { "id": 7, "titulo": "Pronombres", "grupo": "G2", "emoji": "🗣️" },
   { "id": 9, "titulo": "Preguntas", "grupo": "G3", "emoji": "❓" },
@@ -22,7 +22,7 @@ window.catalogoGlobal = [
   { "id": 8, "titulo": "Meses", "grupo": "B2", "emoji": "🗓️" },
   { "id": 25, "titulo": "Animales de la Granja", grupo: "Z1", emoji: "🐮" },
   { "id": 26, "titulo": "Animales Salvajes", grupo: "Z2", emoji: "🦁" },
-  { "id": 27, "titulo": "Animales del Mar", grupo: "Z3", emoji: "🐬" }
+  { "id": 27, "titulo": "Animales del Mar", grupo: "Z3", emoji: "🐬" },
   // --- Directos
   { "id": 2, "titulo": "Alimentos 1", "grupo": "A1", "emoji": "🍕" },
   { "id": 3, "titulo": "Objetos 1", "grupo": "O1", "emoji": "🛋️" },
