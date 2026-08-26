@@ -4,6 +4,7 @@ window.catalogoGlobal = [
   { id: 20, titulo: "Colores", grupo: "XC", emoji: "🎨" },
   { id: 21, titulo: "Gramatica", grupo: "XG", emoji: "📝" },
   { id: 22, titulo: "Ser Humano", grupo: "XH", emoji: "📝" },
+  { id: 22, titulo: "Calendario", grupo: "Xc", emoji: "📝" },
   // --- Hijjos
   { "id": 1, "titulo": "Verbos 1", "grupo": "V1", "emoji": "🏃" },
   { "id": 11, "titulo": "Verbos 2", "grupo": "V2", "emoji": "🏃" },
@@ -19,10 +20,10 @@ window.catalogoGlobal = [
   // --- Directos
   { "id": 2, "titulo": "Alimentos 1", "grupo": "A1", "emoji": "🍕" },
   { "id": 3, "titulo": "Objetos 1", "grupo": "O1", "emoji": "🛋️" },
-  { "id": 4, "titulo": "Días ", "grupo": "D1", "emoji": "📅" },
+  { "id": 4, "titulo": "Días ", "grupo": "c1", "emoji": "📅" },
   { "id": 5, "titulo": "Números ", "grupo": "N1", "emoji": "🔢" },
   
-  { "id": 8, "titulo": "Meses", "grupo": "M1", "emoji": "🗓️" },
+  { "id": 8, "titulo": "Meses", "grupo": "c2", "emoji": "🗓️" },
   
   
   { "id": 13, "titulo": "Transporte", "grupo": "T1", "emoji": "🚗" },
