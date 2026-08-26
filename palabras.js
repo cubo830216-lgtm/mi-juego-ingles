@@ -6,7 +6,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍎",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍐",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍌",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍈",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍉",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 7,
@@ -51,7 +51,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍊",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 8,
@@ -60,7 +60,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍓",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🥝",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 10,
@@ -78,7 +78,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍒",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 11,
@@ -87,7 +87,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍞",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 12,
@@ -96,7 +96,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🧀",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 13,
@@ -105,7 +105,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🥛",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 14,
@@ -114,7 +114,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "☕",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 15,
@@ -123,7 +123,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍫",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 16,
@@ -132,7 +132,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍗",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 17,
@@ -141,7 +141,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🥩",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 18,
@@ -150,7 +150,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🐟",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 19,
@@ -159,7 +159,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍇",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 20,
@@ -168,7 +168,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🎃",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 21,
@@ -177,7 +177,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🥔",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 22,
@@ -186,7 +186,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🥒",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 23,
@@ -195,7 +195,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍅",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 24,
@@ -204,7 +204,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🥕",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 25,
@@ -213,7 +213,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🥚",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 26,
@@ -222,7 +222,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🧈",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 27,
@@ -231,7 +231,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🧂",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 28,
@@ -240,7 +240,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "🍬",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 31,
@@ -249,7 +249,7 @@ window.palabrasGlobal = [
     "grupo": "A1",
     "color": "#000000",
     "emoji": "💧",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 32,
@@ -258,7 +258,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "🏃",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 33,
@@ -267,7 +267,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "🦘",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 34,
@@ -276,7 +276,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "🍕",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 35,
@@ -285,7 +285,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "🥤",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 36,
@@ -294,7 +294,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "😴",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 37,
@@ -303,7 +303,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "📚",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 38,
@@ -312,7 +312,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "✍️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 39,
@@ -321,7 +321,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "💃",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 40,
@@ -330,7 +330,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "🎤",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 41,
@@ -339,7 +339,7 @@ window.palabrasGlobal = [
     "grupo": "V1",
     "color": "#000000",
     "emoji": "🚶",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 42,
@@ -348,7 +348,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "🌙",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 43,
@@ -357,7 +357,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "🔥",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 44,
@@ -366,7 +366,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "🌎",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 45,
@@ -375,7 +375,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "⚡",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 46,
@@ -384,7 +384,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "🎉",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 47,
@@ -393,7 +393,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "☀️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 48,
@@ -402,7 +402,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "🌞",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 49,
@@ -411,7 +411,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "1️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 50,
@@ -420,7 +420,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "2️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 51,
@@ -429,7 +429,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "3️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 52,
@@ -438,7 +438,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "4️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 53,
@@ -447,7 +447,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "5️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 54,
@@ -456,7 +456,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "6️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 55,
@@ -465,7 +465,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "7️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 56,
@@ -474,7 +474,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "8️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 57,
@@ -483,7 +483,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "9️⃣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 58,
@@ -492,7 +492,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔟",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 59,
@@ -501,7 +501,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 60,
@@ -510,7 +510,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 61,
@@ -519,7 +519,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 62,
@@ -528,7 +528,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 63,
@@ -537,7 +537,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 64,
@@ -546,7 +546,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 65,
@@ -555,7 +555,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 66,
@@ -564,7 +564,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 67,
@@ -573,7 +573,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 68,
@@ -582,7 +582,7 @@ window.palabrasGlobal = [
     "grupo": "N1",
     "color": "#000000",
     "emoji": "🔢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 69,
@@ -591,7 +591,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🍴",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 70,
@@ -600,7 +600,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🥄",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 71,
@@ -609,7 +609,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🪑",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 72,
@@ -618,7 +618,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🛋️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 73,
@@ -627,7 +627,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🛋️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 74,
@@ -636,7 +636,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🚪",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 75,
@@ -645,7 +645,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🌀",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 76,
@@ -654,7 +654,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "📺",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 77,
@@ -663,7 +663,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "📻",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 78,
@@ -672,7 +672,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🍽️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 79,
@@ -681,7 +681,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🧻",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 80,
@@ -690,7 +690,7 @@ window.palabrasGlobal = [
     "grupo": "O1",
     "color": "#000000",
     "emoji": "🧱",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 81,
@@ -699,7 +699,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#ff69b4",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 82,
@@ -708,7 +708,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#f44336",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 83,
@@ -717,7 +717,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#2196f3",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 84,
@@ -726,7 +726,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#4caf50",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 85,
@@ -735,7 +735,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#ffeb3b",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 86,
@@ -744,7 +744,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#ff9800",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 87,
@@ -753,7 +753,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#9c27b0",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 88,
@@ -762,7 +762,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#212121",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 89,
@@ -771,7 +771,7 @@ window.palabrasGlobal = [
     "grupo": "C1",
     "color": "#ffffff",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 90,
@@ -780,7 +780,7 @@ window.palabrasGlobal = [
     "grupo": "G2",
     "color": "#000000",
     "emoji": "🙋‍♂️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 91,
@@ -789,7 +789,7 @@ window.palabrasGlobal = [
     "grupo": "G2",
     "color": "#000000",
     "emoji": "🫵",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 92,
@@ -798,7 +798,7 @@ window.palabrasGlobal = [
     "grupo": "G2",
     "color": "#000000",
     "emoji": "👨",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 93,
@@ -807,7 +807,7 @@ window.palabrasGlobal = [
     "grupo": "G2",
     "color": "#000000",
     "emoji": "👩",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 94,
@@ -816,7 +816,7 @@ window.palabrasGlobal = [
     "grupo": "G2",
     "color": "#000000",
     "emoji": "📦",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 95,
@@ -825,7 +825,7 @@ window.palabrasGlobal = [
     "grupo": "G2",
     "color": "#000000",
     "emoji": "👥",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 96,
@@ -834,7 +834,7 @@ window.palabrasGlobal = [
     "grupo": "G2",
     "color": "#000000",
     "emoji": "👥",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 97,
@@ -843,7 +843,7 @@ window.palabrasGlobal = [
     "grupo": "G2",
     "color": "#000000",
     "emoji": "🧑‍🤝‍🧑",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 98,
@@ -852,7 +852,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "❄️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 99,
@@ -861,7 +861,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "❤️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 100,
@@ -870,7 +870,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "🌱",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 101,
@@ -879,7 +879,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "🌧️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 102,
@@ -888,7 +888,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "💐",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 103,
@@ -897,7 +897,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "☀️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 104,
@@ -906,7 +906,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "🏖️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 105,
@@ -915,7 +915,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "🍉",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 106,
@@ -924,7 +924,7 @@ window.palabrasGlobal = [
     "grupo": "c2",
     "color": "#000000",
     "emoji": "🎒",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 107,
@@ -933,7 +933,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "🎃",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 108,
@@ -942,7 +942,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "🍂",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 109,
@@ -951,7 +951,7 @@ window.palabrasGlobal = [
     "grupo": "B2",
     "color": "#000000",
     "emoji": "🎄",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 110,
@@ -960,7 +960,7 @@ window.palabrasGlobal = [
     "grupo": "G3",
     "color": "#000000",
     "emoji": "❓",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 111,
@@ -969,7 +969,7 @@ window.palabrasGlobal = [
     "grupo": "G3",
     "color": "#000000",
     "emoji": "⏰",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 112,
@@ -978,7 +978,7 @@ window.palabrasGlobal = [
     "grupo": "G3",
     "color": "#000000",
     "emoji": "📍",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 113,
@@ -987,7 +987,7 @@ window.palabrasGlobal = [
     "grupo": "G3",
     "color": "#000000",
     "emoji": "⚙️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 114,
@@ -996,7 +996,7 @@ window.palabrasGlobal = [
     "grupo": "G3",
     "color": "#000000",
     "emoji": "💡",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 115,
@@ -1005,7 +1005,7 @@ window.palabrasGlobal = [
     "grupo": "G3",
     "color": "#000000",
     "emoji": "👤",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 116,
@@ -1014,7 +1014,7 @@ window.palabrasGlobal = [
     "grupo": "G1",
     "color": "#000000",
     "emoji": "🛠️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 117,
@@ -1023,7 +1023,7 @@ window.palabrasGlobal = [
     "grupo": "G1",
     "color": "#000000",
     "emoji": "🚫",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 118,
@@ -1032,7 +1032,7 @@ window.palabrasGlobal = [
     "grupo": "G1",
     "color": "#000000",
     "emoji": "🚀",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 119,
@@ -1041,7 +1041,7 @@ window.palabrasGlobal = [
     "grupo": "G1",
     "color": "#000000",
     "emoji": "💪",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 120,
@@ -1050,7 +1050,7 @@ window.palabrasGlobal = [
     "grupo": "G1",
     "color": "#000000",
     "emoji": "❌",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 121,
@@ -1059,7 +1059,7 @@ window.palabrasGlobal = [
     "grupo": "G1",
     "color": "#000000",
     "emoji": "🚫",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 122,
@@ -1068,7 +1068,7 @@ window.palabrasGlobal = [
     "grupo": "V2",
     "color": "#000000",
     "emoji": "❤️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 123,
@@ -1077,7 +1077,7 @@ window.palabrasGlobal = [
     "grupo": "V2",
     "color": "#000000",
     "emoji": "💭",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 124,
@@ -1086,7 +1086,7 @@ window.palabrasGlobal = [
     "grupo": "V2",
     "color": "#000000",
     "emoji": "🪪",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 125,
@@ -1095,7 +1095,7 @@ window.palabrasGlobal = [
     "grupo": "V2",
     "color": "#000000",
     "emoji": "🏃‍♂️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 126,
@@ -1104,7 +1104,7 @@ window.palabrasGlobal = [
     "grupo": "V2",
     "color": "#000000",
     "emoji": "👀",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 127,
@@ -1113,7 +1113,7 @@ window.palabrasGlobal = [
     "grupo": "V2",
     "color": "#000000",
     "emoji": "🗣️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 128,
@@ -1122,7 +1122,7 @@ window.palabrasGlobal = [
     "grupo": "C2",
     "color": "#795548",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 129,
@@ -1131,7 +1131,7 @@ window.palabrasGlobal = [
     "grupo": "C2",
     "color": "#9e9e9e",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 130,
@@ -1140,7 +1140,7 @@ window.palabrasGlobal = [
     "grupo": "C2",
     "color": "#ffd700",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 131,
@@ -1149,7 +1149,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "🚗",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 132,
@@ -1158,7 +1158,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "🚲",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 133,
@@ -1167,7 +1167,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "🛹",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 134,
@@ -1176,7 +1176,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "🛼",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 135,
@@ -1185,7 +1185,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "🛵",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 136,
@@ -1194,7 +1194,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "🚌",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 137,
@@ -1203,7 +1203,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "🏍️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 138,
@@ -1212,7 +1212,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "✈️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 139,
@@ -1221,7 +1221,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "🚆",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 140,
@@ -1230,7 +1230,7 @@ window.palabrasGlobal = [
     "grupo": "T1",
     "color": "#000000",
     "emoji": "⛵",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 141,
@@ -1239,7 +1239,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "✏️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 142,
@@ -1248,7 +1248,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "🖊️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 143,
@@ -1257,7 +1257,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "📓",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 144,
@@ -1266,7 +1266,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "📖",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 145,
@@ -1275,7 +1275,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "👝",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 146,
@@ -1284,7 +1284,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "🎒",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 147,
@@ -1293,7 +1293,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "📏",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 148,
@@ -1302,7 +1302,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "📐",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 149,
@@ -1311,7 +1311,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "🧹",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 150,
@@ -1320,7 +1320,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "✂️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 151,
@@ -1329,7 +1329,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "🧪",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 152,
@@ -1338,7 +1338,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "✏️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 153,
@@ -1347,7 +1347,7 @@ window.palabrasGlobal = [
     "grupo": "E1",
     "color": "#000000",
     "emoji": "🖍️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 154,
@@ -1356,7 +1356,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🎩",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 155,
@@ -1365,7 +1365,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🧢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 156,
@@ -1374,7 +1374,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🧣",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 157,
@@ -1383,7 +1383,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "👚",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 158,
@@ -1392,7 +1392,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "👕",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 159,
@@ -1401,7 +1401,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🧥",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 160,
@@ -1410,7 +1410,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🧶",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 161,
@@ -1419,7 +1419,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🧤",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 162,
@@ -1428,7 +1428,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "⌚",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 163,
@@ -1437,7 +1437,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "👗",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 164,
@@ -1446,7 +1446,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "👗",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 165,
@@ -1455,7 +1455,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "👖",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 166,
@@ -1464,7 +1464,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🧦",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 167,
@@ -1473,7 +1473,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "👟",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 168,
@@ -1482,7 +1482,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🩴",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 169,
@@ -1491,7 +1491,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🥿",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 170,
@@ -1500,7 +1500,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "👖",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 171,
@@ -1509,7 +1509,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "👓",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 172,
@@ -1518,7 +1518,7 @@ window.palabrasGlobal = [
     "grupo": "R1",
     "color": "#000000",
     "emoji": "🥾",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 173,
@@ -1527,7 +1527,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🗣️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 174,
@@ -1536,7 +1536,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🗣️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 175,
@@ -1545,7 +1545,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🤷‍♂️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 176,
@@ -1554,7 +1554,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "💪",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 177,
@@ -1563,7 +1563,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "✋",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 178,
@@ -1572,7 +1572,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🤌",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 179,
@@ -1581,7 +1581,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🦾",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 180,
@@ -1590,7 +1590,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🫁",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 181,
@@ -1599,7 +1599,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🧍",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 182,
@@ -1608,7 +1608,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🦵",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 183,
@@ -1617,7 +1617,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🦶",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 184,
@@ -1626,7 +1626,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "👀",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 185,
@@ -1635,7 +1635,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "👃",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 186,
@@ -1644,7 +1644,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "👄",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 187,
@@ -1653,7 +1653,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "👂",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 188,
@@ -1662,7 +1662,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "💇‍♀️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 189,
@@ -1671,7 +1671,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🧎",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 190,
@@ -1680,7 +1680,7 @@ window.palabrasGlobal = [
     "grupo": "H1",
     "color": "#000000",
     "emoji": "🚶‍♂️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 191,
@@ -1689,7 +1689,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "❤️",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 192,
@@ -1698,7 +1698,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "😡",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 193,
@@ -1707,7 +1707,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "🤬",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 194,
@@ -1716,7 +1716,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "😢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 195,
@@ -1725,7 +1725,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "😄",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 196,
@@ -1734,7 +1734,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "🥱",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 197,
@@ -1743,7 +1743,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "😨",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 198,
@@ -1752,7 +1752,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "😲",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 199,
@@ -1761,7 +1761,7 @@ window.palabrasGlobal = [
     "grupo": "H2",
     "color": "#000000",
     "emoji": "🥱",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 200,
@@ -1770,7 +1770,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "👂",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 201,
@@ -1779,7 +1779,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "🦷",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 202,
@@ -1788,7 +1788,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "🦶",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 203,
@@ -1797,7 +1797,7 @@ window.palabrasGlobal = [
     "grupo": "B1",
     "color": "#000000",
     "emoji": "🦶",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 204,
@@ -1806,7 +1806,7 @@ window.palabrasGlobal = [
     "grupo": "H3",
     "color": "#000000",
     "emoji": "🍔",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 205,
@@ -1815,7 +1815,7 @@ window.palabrasGlobal = [
     "grupo": "H3",
     "color": "#000000",
     "emoji": "🥤",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 206,
@@ -1824,7 +1824,7 @@ window.palabrasGlobal = [
     "grupo": "H3",
     "color": "#000000",
     "emoji": "🥶",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 207,
@@ -1833,7 +1833,7 @@ window.palabrasGlobal = [
     "grupo": "H3",
     "color": "#000000",
     "emoji": "🥵",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 208,
@@ -1842,7 +1842,7 @@ window.palabrasGlobal = [
     "grupo": "H3",
     "color": "#000000",
     "emoji": "😴",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 209,
@@ -1851,7 +1851,7 @@ window.palabrasGlobal = [
     "grupo": "H3",
     "color": "#000000",
     "emoji": "🥱",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 210,
@@ -1860,7 +1860,7 @@ window.palabrasGlobal = [
     "grupo": "H3",
     "color": "#000000",
     "emoji": "🤒",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 211,
@@ -1869,7 +1869,7 @@ window.palabrasGlobal = [
     "grupo": "H3",
     "color": "#000000",
     "emoji": "💫",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 212,
@@ -1878,7 +1878,7 @@ window.palabrasGlobal = [
     "grupo": "C2",
     "color": "#c0c0c0",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 213,
@@ -1887,7 +1887,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#00ffff",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 214,
@@ -1896,7 +1896,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#ee82ee",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 215,
@@ -1905,7 +1905,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#ff00ff",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 216,
@@ -1914,7 +1914,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#f5f5dc",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 217,
@@ -1923,7 +1923,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#40e0d0",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 218,
@@ -1932,7 +1932,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#ff7f50",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 219,
@@ -1941,7 +1941,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#000080",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 220,
@@ -1950,7 +1950,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#32cd32",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 221,
@@ -1959,7 +1959,7 @@ window.palabrasGlobal = [
     "grupo": "C3",
     "color": "#cd7f32",
     "emoji": null,
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 222,
@@ -1968,7 +1968,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🐮",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 223,
@@ -1977,7 +1977,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🐷",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 224,
@@ -1986,7 +1986,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🐴",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 225,
@@ -1995,7 +1995,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🐑",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 226,
@@ -2004,7 +2004,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🐔",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 227,
@@ -2013,7 +2013,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🐓",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 228,
@@ -2022,7 +2022,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🦆",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 229,
@@ -2031,7 +2031,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🐐",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 230,
@@ -2040,7 +2040,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🫏",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 231,
@@ -2049,7 +2049,7 @@ window.palabrasGlobal = [
     "grupo": "Z1",
     "color": "#000000",
     "emoji": "🦃",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 232,
@@ -2058,7 +2058,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🦁",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 233,
@@ -2067,7 +2067,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🐯",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 234,
@@ -2076,7 +2076,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🐘",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 235,
@@ -2085,7 +2085,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🦒",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 236,
@@ -2094,7 +2094,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🐒",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 237,
@@ -2103,7 +2103,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🐻",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 238,
@@ -2112,7 +2112,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🦓",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 239,
@@ -2121,7 +2121,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🦛",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 240,
@@ -2130,7 +2130,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🦏",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 241,
@@ -2139,7 +2139,7 @@ window.palabrasGlobal = [
     "grupo": "Z2",
     "color": "#000000",
     "emoji": "🐍",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 242,
@@ -2148,7 +2148,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🐬",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 243,
@@ -2157,7 +2157,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🦈",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 244,
@@ -2166,7 +2166,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🐳",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 245,
@@ -2175,7 +2175,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🐙",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 246,
@@ -2184,7 +2184,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🐢",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 247,
@@ -2193,7 +2193,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🐟",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 248,
@@ -2202,7 +2202,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🦀",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 249,
@@ -2211,7 +2211,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🪼",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 250,
@@ -2220,7 +2220,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "⭐",
-    "urs_imagen": null
+    "url_imagen": null
   },
   {
     "id": 251,
@@ -2229,7 +2229,7 @@ window.palabrasGlobal = [
     "grupo": "Z3",
     "color": "#000000",
     "emoji": "🦭",
-    "urs_imagen": null
+    "url_imagen": null
   }
   
 ];
