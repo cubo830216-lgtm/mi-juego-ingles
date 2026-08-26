@@ -26,12 +26,7 @@ window.catalogoGlobal = [
   // --- Directos
   { "id": 2, "titulo": "Alimentos 1", "grupo": "A1", "emoji": "🍕" },
   { "id": 3, "titulo": "Objetos 1", "grupo": "O1", "emoji": "🛋️" },
-  
-  { "id": 5, "titulo": "Números ", "grupo": "N1", "emoji": "🔢" },
-  
-  
-  
-  
+  { "id": 5, "titulo": "Números ", "grupo": "N1", "emoji": "🔢" },  
   { "id": 13, "titulo": "Transporte", "grupo": "T1", "emoji": "🚗" },
   { "id": 14, "titulo": "Escuela", "grupo": "E1", "emoji": "🏫" },
   { "id": 15, "titulo": "Ropa", "grupo": "R1", "emoji": "👕" }
