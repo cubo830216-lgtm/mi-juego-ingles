@@ -12,7 +12,8 @@ window.catalogoGlobal = [
   { "id": 12, "titulo": "Colores 3", "grupo": "C3", "emoji": "🎨" },
   { "id": 10, "titulo": "Auxiliares", "grupo": "G1", "emoji": "⚡" },
   { "id": 7, "titulo": "Pronombres", "grupo": "G2", "emoji": "🗣️" },
-    { "id": 16, "titulo": "Cuerpo Humano", "grupo": "H1", "emoji": "🧍" },
+  { "id": 9, "titulo": "Preguntas", "grupo": "G3", "emoji": "❓" },
+  { "id": 16, "titulo": "Cuerpo Humano", "grupo": "H1", "emoji": "🧍" },
   { "id": 17, "titulo": "Emociones", "grupo": "H2", "emoji": "😊" },
   { "id": 18, "titulo": "Sensaciones", "grupo": "H3", "emoji": "🤒" },
   // --- Directos
@@ -22,7 +23,7 @@ window.catalogoGlobal = [
   { "id": 5, "titulo": "Números ", "grupo": "N1", "emoji": "🔢" },
   
   { "id": 8, "titulo": "Meses", "grupo": "M1", "emoji": "🗓️" },
-  { "id": 9, "titulo": "Preguntas", "grupo": "Q1", "emoji": "❓" },
+  
   
   { "id": 13, "titulo": "Transporte", "grupo": "T1", "emoji": "🚗" },
   { "id": 14, "titulo": "Escuela", "grupo": "E1", "emoji": "🏫" },
