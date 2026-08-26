@@ -2,7 +2,7 @@ window.catalogoGlobal = [
   // --- PADRES (Inician con "X") ---
   { id: 19, titulo: "Verbos", grupo: "XV", emoji: "🏃" },
   { id: 20, titulo: "Colores", grupo: "XC", emoji: "🎨" },
-  { id: 20, titulo: "Gramatica", grupo: "XG", emoji: "📝" },
+  { id: 21, titulo: "Gramatica", grupo: "XG", emoji: "📝" },
   // --- Hijjos
   { "id": 1, "titulo": "Verbos 1", "grupo": "V1", "emoji": "🏃" },
   { "id": 11, "titulo": "Verbos 2", "grupo": "V2", "emoji": "🏃" },
@@ -21,7 +21,8 @@ window.catalogoGlobal = [
   { "id": 13, "titulo": "Transporte", "grupo": "T1", "emoji": "🚗" },
   { "id": 14, "titulo": "Escuela", "grupo": "E1", "emoji": "🏫" },
   { "id": 15, "titulo": "Ropa", "grupo": "R1", "emoji": "👕" },
-  { "id": 16, "titulo": "Cuerpo Humano", "grupo": "B1", "emoji": "🧍" },
-  { "id": 17, "titulo": "Emociones", "grupo": "EM1", "emoji": "😊" },
-  { "id": 18, "titulo": "Sensaciones", "grupo": "S1", "emoji": "🤒" }
+  { "id": 16, "titulo": "Cuerpo Humano", "grupo": "H1", "emoji": "🧍" },
+  { "id": 17, "titulo": "Emociones", "grupo": "H2", "emoji": "😊" },
+  { "id": 18, "titulo": "Sensaciones", "grupo": "H3", "emoji": "🤒" },
+  { id: 21, titulo: "Ser Humano", grupo: "Xh", emoji: "📝" },
 ];
