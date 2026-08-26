@@ -6,118 +6,36 @@
   <title>Vocalizar</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-    }
-
-    .card {
-      background-color: #ffffff;
-      width: 100%;
-      max-width: 360px;
-      height: 100%;
-      max-height: 500px;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-
+    html, body { width: 100%; height: 100%; overflow: hidden; font-family: Arial, sans-serif; background-color: #ffffff; }
+    body { display: flex; justify-content: center; align-items: center; padding: 10px; }
+    .card { background-color: #ffffff; width: 100%; max-width: 360px; height: 100%; max-height: 500px; padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; position: relative; }
+    
     /* Caja de Emoji / Color */
-    .emoji-box {
-      width: 100%;
-      flex: 1;
-      max-height: 170px;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 4.5rem;
-      margin-bottom: 5px;
-      background-color: #eff6ff;
-      transition: background-color 0.3s;
-    }
+    .emoji-box { width: 100%; flex: 1; max-height: 170px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 4.5rem; margin-bottom: 5px; background-color: #eff6ff; transition: background-color 0.3s; }
+    .word-title { font-size: 2rem; font-weight: 800; color: #1e293b; text-transform: uppercase; letter-spacing: 1px; text-align: center; }
+    .word-translation { font-size: 1.1rem; color: #64748b; font-style: italic; text-align: center; margin-bottom: 5px; }
+    
+    .actions { display: flex; gap: 20px; margin-bottom: 10px; align-items: center; position: relative; }
+    .btn-circle { width: 55px; height: 55px; border-radius: 50%; border: 2px solid #e2e8f0; background-color: #f8fafc; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.03); }
+    .btn-circle:active { transform: scale(0.95); }
 
-    .word-title {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #1e293b;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      text-align: center;
-    }
-
-    .word-translation {
-      font-size: 1.1rem;
-      color: #64748b;
-      font-style: italic;
-      text-align: center;
-      margin-bottom: 5px;
-    }
-
-    .actions {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 10px;
-    }
-
-    .btn-circle {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      border: 2px solid #e2e8f0;
-      background-color: #f8fafc;
-      font-size: 1.4rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-    }
-
-    .btn-circle:active {
-      transform: scale(0.95);
+    /* Icono de error (Tacha) al lado del audífono */
+    .error-mark {
+      display: none;
+      font-size: 1.5rem;
+      color: #ef4444;
+      position: absolute;
+      right: -35px;
+      animation: fadeIn 0.2s ease-in-out;
     }
 
     /* Contenedor de botones Atrás y Siguiente */
-    .nav-buttons {
-      display: flex;
-      gap: 10px;
-      width: 100%;
-    }
-
-    .btn-nav {
-      flex: 1;
-      background-color: #38bdf8;
-      color: white;
-      border: none;
-      padding: 12px;
-      border-radius: 12px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(56, 189, 248, 0.4);
-    }
-
-    .btn-nav:active {
-      background-color: #0284c7;
-    }
+    .nav-buttons { display: flex; gap: 10px; width: 100%; }
+    .btn-nav { flex: 1; background-color: #38bdf8; color: white; border: none; padding: 12px; border-radius: 12px; font-size: 1rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(56, 189, 248, 0.4); }
+    .btn-nav:active { background-color: #0284c7; }
   </style>
 </head>
 <body>
-
   <div class="card">
     <div id="emoji-box" class="emoji-box">
       <span id="emoji-txt">❓</span>
@@ -131,6 +49,7 @@
     <div class="actions">
       <button class="btn-circle" onclick="escucharPalabra()">🔊</button>
       <button class="btn-circle" onclick="reconocerVoz()">🎧</button>
+      <span id="error-mark" class="error-mark">❌</span>
     </div>
 
     <!-- Botones de Navegación -->
@@ -141,7 +60,6 @@
   </div>
 
   <script src="palabras.js"></script>
-
   <script>
     let palabrasFiltradas = [];
     let indiceActual = 0;
@@ -164,7 +82,7 @@
         document.getElementById('emoji-txt').innerText = "⚠️";
         return;
       }
-
+      
       const item = palabrasFiltradas[indiceActual];
       const elemName = document.getElementById('name');
       const elemBox = document.getElementById('emoji-box');
@@ -178,12 +96,10 @@
       const esNegro = color === '' || color === 'black' || color === '#000000' || color === '#000';
 
       if (!esNegro) {
-        // Si el color no es negro: cambia color del texto y llena el contenedor
         elemName.style.color = item.color;
         elemBox.style.backgroundColor = item.color;
-        elemEmojiTxt.innerText = ''; // Oculta el emoji/?
+        elemEmojiTxt.innerText = '';
       } else {
-        // Restauración por defecto
         elemName.style.color = '#1e293b';
         elemBox.style.backgroundColor = '#eff6ff';
         elemEmojiTxt.innerText = item.emoji || '❓';
@@ -216,6 +132,14 @@
       window.speechSynthesis.speak(utterance);
     }
 
+    function mostrarErrorTemporizado() {
+      const mark = document.getElementById('error-mark');
+      mark.style.display = 'inline';
+      setTimeout(() => {
+        mark.style.display = 'none';
+      }, 1000);
+    }
+
     function reconocerVoz() {
       if (palabrasFiltradas.length === 0) return;
 
@@ -236,13 +160,12 @@
         if (dicho === correcto) {
           siguientePalabra();
         } else {
-          alert(`Dijiste: "${dicho}". ¡Intenta de nuevo!`);
+          mostrarErrorTemporizado();
         }
       };
     }
 
     mostrarPalabra();
   </script>
-
 </body>
 </html>
