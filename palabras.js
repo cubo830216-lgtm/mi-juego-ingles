@@ -345,7 +345,7 @@ window.palabrasGlobal = [
     "id": 42,
     "name": "monday",
     "translation": "Lunes",
-    "grupo": "D1",
+    "grupo": "c1",
     "color": "#000000",
     "emoji": "🌙",
     "urs_imagen": null
@@ -354,7 +354,7 @@ window.palabrasGlobal = [
     "id": 43,
     "name": "tuesday",
     "translation": "Martes",
-    "grupo": "D1",
+    "grupo": "c1",
     "color": "#000000",
     "emoji": "🔥",
     "urs_imagen": null
@@ -363,7 +363,7 @@ window.palabrasGlobal = [
     "id": 44,
     "name": "wednesday",
     "translation": "Miércoles",
-    "grupo": "D1",
+    "grupo": "c1",
     "color": "#000000",
     "emoji": "🌎",
     "urs_imagen": null
@@ -372,7 +372,7 @@ window.palabrasGlobal = [
     "id": 45,
     "name": "thursday",
     "translation": "Jueves",
-    "grupo": "D1",
+    "grupo": "c1",
     "color": "#000000",
     "emoji": "⚡",
     "urs_imagen": null
@@ -381,7 +381,7 @@ window.palabrasGlobal = [
     "id": 46,
     "name": "friday",
     "translation": "Viernes",
-    "grupo": "D1",
+    "grupo": "c1",
     "color": "#000000",
     "emoji": "🎉",
     "urs_imagen": null
@@ -390,7 +390,7 @@ window.palabrasGlobal = [
     "id": 47,
     "name": "saturday",
     "translation": "Sábado",
-    "grupo": "D1",
+    "grupo": "c1",
     "color": "#000000",
     "emoji": "☀️",
     "urs_imagen": null
@@ -399,7 +399,7 @@ window.palabrasGlobal = [
     "id": 48,
     "name": "sunday",
     "translation": "Domingo",
-    "grupo": "D1",
+    "grupo": "c1",
     "color": "#000000",
     "emoji": "🌞",
     "urs_imagen": null
@@ -849,7 +849,7 @@ window.palabrasGlobal = [
     "id": 98,
     "name": "january",
     "translation": "Enero",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "❄️",
     "urs_imagen": null
@@ -858,7 +858,7 @@ window.palabrasGlobal = [
     "id": 99,
     "name": "february",
     "translation": "Febrero",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "❤️",
     "urs_imagen": null
@@ -867,7 +867,7 @@ window.palabrasGlobal = [
     "id": 100,
     "name": "march",
     "translation": "Marzo",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "🌱",
     "urs_imagen": null
@@ -876,7 +876,7 @@ window.palabrasGlobal = [
     "id": 101,
     "name": "april",
     "translation": "Abril",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "🌧️",
     "urs_imagen": null
@@ -885,7 +885,7 @@ window.palabrasGlobal = [
     "id": 102,
     "name": "may",
     "translation": "Mayo",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "💐",
     "urs_imagen": null
@@ -894,7 +894,7 @@ window.palabrasGlobal = [
     "id": 103,
     "name": "june",
     "translation": "Junio",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "☀️",
     "urs_imagen": null
@@ -903,7 +903,7 @@ window.palabrasGlobal = [
     "id": 104,
     "name": "july",
     "translation": "Julio",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "🏖️",
     "urs_imagen": null
@@ -912,7 +912,7 @@ window.palabrasGlobal = [
     "id": 105,
     "name": "august",
     "translation": "Agosto",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "🍉",
     "urs_imagen": null
@@ -921,7 +921,7 @@ window.palabrasGlobal = [
     "id": 106,
     "name": "september",
     "translation": "Septiembre",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "🎒",
     "urs_imagen": null
@@ -930,7 +930,7 @@ window.palabrasGlobal = [
     "id": 107,
     "name": "october",
     "translation": "Octubre",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "🎃",
     "urs_imagen": null
@@ -939,7 +939,7 @@ window.palabrasGlobal = [
     "id": 108,
     "name": "november",
     "translation": "Noviembre",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "🍂",
     "urs_imagen": null
@@ -948,7 +948,7 @@ window.palabrasGlobal = [
     "id": 109,
     "name": "december",
     "translation": "Diciembre",
-    "grupo": "M1",
+    "grupo": "c2",
     "color": "#000000",
     "emoji": "🎄",
     "urs_imagen": null
