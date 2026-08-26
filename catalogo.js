@@ -24,5 +24,5 @@ window.catalogoGlobal = [
   { "id": 16, "titulo": "Cuerpo Humano", "grupo": "H1", "emoji": "🧍" },
   { "id": 17, "titulo": "Emociones", "grupo": "H2", "emoji": "😊" },
   { "id": 18, "titulo": "Sensaciones", "grupo": "H3", "emoji": "🤒" },
-  { id: 21, titulo: "Ser Humano", grupo: "Xh", emoji: "📝" },
+  { id: 21, titulo: "Ser Humano", grupo: "XH", emoji: "📝" },
 ];
