@@ -5,7 +5,7 @@ window.catalogoGlobal = [
   { id: 21, titulo: "Gramatica", grupo: "XG", emoji: "📝" },
   { id: 22, titulo: "Ser Humano", grupo: "XH", emoji: "📝" },
   { id: 23, titulo: "Calendario", grupo: "XB", emoji: "📝" },
-  { id: 24, titulo: "Animales", grupo: "XZ", emoji: "🦁" }
+  { id: 24, titulo: "Animales", grupo: "XZ", emoji: "🦁" },
   // --- Hijjos
   { "id": 1, "titulo": "Verbos 1", "grupo": "V1", "emoji": "🏃" },
   { "id": 11, "titulo": "Verbos 2", "grupo": "V2", "emoji": "🏃" },
