@@ -1870,5 +1870,96 @@ window.palabrasGlobal = [
     "color": "#000000",
     "emoji": "💫",
     "urs_imagen": null
+  },
+  {
+    "id": 212,
+    "name": "silver",
+    "translation": "Plateado",
+    "grupo": "C2",
+    "color": "#c0c0c0",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 213,
+    "name": "cyan",
+    "translation": "Cian / Celeste",
+    "grupo": "C3",
+    "color": "#00ffff",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 214,
+    "name": "violet",
+    "translation": "Violeta",
+    "grupo": "C3",
+    "color": "#ee82ee",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 215,
+    "name": "magenta",
+    "translation": "Magenta",
+    "grupo": "C3",
+    "color": "#ff00ff",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 216,
+    "name": "beige",
+    "translation": "Beige / Crema",
+    "grupo": "C3",
+    "color": "#f5f5dc",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 217,
+    "name": "turquoise",
+    "translation": "Turquesa",
+    "grupo": "C3",
+    "color": "#40e0d0",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 218,
+    "name": "coral",
+    "translation": "Coral",
+    "grupo": "C3",
+    "color": "#ff7f50",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 219,
+    "name": "navy blue",
+    "translation": "Azul marino",
+    "grupo": "C3",
+    "color": "#000080",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 220,
+    "name": "lime",
+    "translation": "Verde lima",
+    "grupo": "C3",
+    "color": "#32cd32",
+    "emoji": null,
+    "urs_imagen": null
+  },
+  {
+    "id": 221,
+    "name": "bronze",
+    "translation": "Bronce",
+    "grupo": "C3",
+    "color": "#cd7f32",
+    "emoji": null,
+    "urs_imagen": null
   }
+  
 ];
