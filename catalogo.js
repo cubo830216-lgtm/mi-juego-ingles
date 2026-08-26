@@ -2,6 +2,7 @@ window.catalogoGlobal = [
   // --- PADRES (Inician con "X") ---
   { id: 19, titulo: "Verbos", grupo: "XV", emoji: "🏃" },
   { id: 20, titulo: "Colores", grupo: "XC", emoji: "🎨" },
+  { id: 20, titulo: "Grmatica", grupo: "XG", emoji: "🎨" },
   // --- Hijjos
   { "id": 1, "titulo": "Verbos 1", "grupo": "V1", "emoji": "🏃" },
   { "id": 11, "titulo": "Verbos 2", "grupo": "V2", "emoji": "🏃" },
@@ -13,7 +14,7 @@ window.catalogoGlobal = [
   { "id": 3, "titulo": "Objetos 1", "grupo": "O1", "emoji": "🛋️" },
   { "id": 4, "titulo": "Días ", "grupo": "D1", "emoji": "📅" },
   { "id": 5, "titulo": "Números ", "grupo": "N1", "emoji": "🔢" },
-  { "id": 7, "titulo": "Pronombres", "grupo": "P1", "emoji": "🗣️" },
+  { "id": 7, "titulo": "Pronombres", "grupo": "G1", "emoji": "🗣️" },
   { "id": 8, "titulo": "Meses", "grupo": "M1", "emoji": "🗓️" },
   { "id": 9, "titulo": "Preguntas", "grupo": "Q1", "emoji": "❓" },
   { "id": 10, "titulo": "Auxiliares", "grupo": "G1", "emoji": "⚡" },
