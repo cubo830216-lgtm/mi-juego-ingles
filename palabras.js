@@ -1960,6 +1960,276 @@ window.palabrasGlobal = [
     "color": "#cd7f32",
     "emoji": null,
     "urs_imagen": null
+  },
+  {
+    "id": 222,
+    "name": "cow",
+    "translation": "Vaca",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🐮",
+    "urs_imagen": null
+  },
+  {
+    "id": 223,
+    "name": "pig",
+    "translation": "Cerdo / Puerco",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🐷",
+    "urs_imagen": null
+  },
+  {
+    "id": 224,
+    "name": "horse",
+    "translation": "Caballo",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🐴",
+    "urs_imagen": null
+  },
+  {
+    "id": 225,
+    "name": "sheep",
+    "translation": "Oveja",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🐑",
+    "urs_imagen": null
+  },
+  {
+    "id": 226,
+    "name": "chicken",
+    "translation": "Pollo / Gallina",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🐔",
+    "urs_imagen": null
+  },
+  {
+    "id": 227,
+    "name": "rooster",
+    "translation": "Gallo",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🐓",
+    "urs_imagen": null
+  },
+  {
+    "id": 228,
+    "name": "duck",
+    "translation": "Pato",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🦆",
+    "urs_imagen": null
+  },
+  {
+    "id": 229,
+    "name": "goat",
+    "translation": "Cabra / Chivo",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🐐",
+    "urs_imagen": null
+  },
+  {
+    "id": 230,
+    "name": "donkey",
+    "translation": "Burro",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🫏",
+    "urs_imagen": null
+  },
+  {
+    "id": 231,
+    "name": "turkey",
+    "translation": "Pavo",
+    "grupo": "Z1",
+    "color": "#1e293b",
+    "emoji": "🦃",
+    "urs_imagen": null
+  },
+  {
+    "id": 232,
+    "name": "lion",
+    "translation": "León",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🦁",
+    "urs_imagen": null
+  },
+  {
+    "id": 233,
+    "name": "tiger",
+    "translation": "Tigre",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🐯",
+    "urs_imagen": null
+  },
+  {
+    "id": 234,
+    "name": "elephant",
+    "translation": "Elefante",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🐘",
+    "urs_imagen": null
+  },
+  {
+    "id": 235,
+    "name": "giraffe",
+    "translation": "Jirafa",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🦒",
+    "urs_imagen": null
+  },
+  {
+    "id": 236,
+    "name": "monkey",
+    "translation": "Mono / Chango",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🐒",
+    "urs_imagen": null
+  },
+  {
+    "id": 237,
+    "name": "bear",
+    "translation": "Oso",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🐻",
+    "urs_imagen": null
+  },
+  {
+    "id": 238,
+    "name": "zebra",
+    "translation": "Cebra",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🦓",
+    "urs_imagen": null
+  },
+  {
+    "id": 239,
+    "name": "hippo",
+    "translation": "Hipopótamo",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🦛",
+    "urs_imagen": null
+  },
+  {
+    "id": 240,
+    "name": "rhino",
+    "translation": "Rinoceronte",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🦏",
+    "urs_imagen": null
+  },
+  {
+    "id": 241,
+    "name": "snake",
+    "translation": "Serpiente / Culebra",
+    "grupo": "Z2",
+    "color": "#1e293b",
+    "emoji": "🐍",
+    "urs_imagen": null
+  },
+  {
+    "id": 242,
+    "name": "dolphin",
+    "translation": "Delfín",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🐬",
+    "urs_imagen": null
+  },
+  {
+    "id": 243,
+    "name": "shark",
+    "translation": "Tiburón",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🦈",
+    "urs_imagen": null
+  },
+  {
+    "id": 244,
+    "name": "whale",
+    "translation": "Ballena",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🐳",
+    "urs_imagen": null
+  },
+  {
+    "id": 245,
+    "name": "octopus",
+    "translation": "Pulpo",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🐙",
+    "urs_imagen": null
+  },
+  {
+    "id": 246,
+    "name": "turtle",
+    "translation": "Tortuga marina",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🐢",
+    "urs_imagen": null
+  },
+  {
+    "id": 247,
+    "name": "fish",
+    "translation": "Pez / Pescado",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🐟",
+    "urs_imagen": null
+  },
+  {
+    "id": 248,
+    "name": "crab",
+    "translation": "Cangrejo",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🦀",
+    "urs_imagen": null
+  },
+  {
+    "id": 249,
+    "name": "jellyfish",
+    "translation": "Medusa / Malagua",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🪼",
+    "urs_imagen": null
+  },
+  {
+    "id": 250,
+    "name": "starfish",
+    "translation": "Estrella de mar",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "⭐",
+    "urs_imagen": null
+  },
+  {
+    "id": 251,
+    "name": "seal",
+    "translation": "Foca",
+    "grupo": "Z3",
+    "color": "#1e293b",
+    "emoji": "🦭",
+    "urs_imagen": null
   }
   
 ];
