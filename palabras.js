@@ -1966,7 +1966,7 @@ window.palabrasGlobal = [
     "name": "cow",
     "translation": "Vaca",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐮",
     "urs_imagen": null
   },
@@ -1975,7 +1975,7 @@ window.palabrasGlobal = [
     "name": "pig",
     "translation": "Cerdo / Puerco",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐷",
     "urs_imagen": null
   },
@@ -1984,7 +1984,7 @@ window.palabrasGlobal = [
     "name": "horse",
     "translation": "Caballo",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐴",
     "urs_imagen": null
   },
@@ -1993,7 +1993,7 @@ window.palabrasGlobal = [
     "name": "sheep",
     "translation": "Oveja",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐑",
     "urs_imagen": null
   },
@@ -2002,7 +2002,7 @@ window.palabrasGlobal = [
     "name": "chicken",
     "translation": "Pollo / Gallina",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐔",
     "urs_imagen": null
   },
@@ -2011,7 +2011,7 @@ window.palabrasGlobal = [
     "name": "rooster",
     "translation": "Gallo",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐓",
     "urs_imagen": null
   },
@@ -2020,7 +2020,7 @@ window.palabrasGlobal = [
     "name": "duck",
     "translation": "Pato",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦆",
     "urs_imagen": null
   },
@@ -2029,7 +2029,7 @@ window.palabrasGlobal = [
     "name": "goat",
     "translation": "Cabra / Chivo",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐐",
     "urs_imagen": null
   },
@@ -2038,7 +2038,7 @@ window.palabrasGlobal = [
     "name": "donkey",
     "translation": "Burro",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🫏",
     "urs_imagen": null
   },
@@ -2047,7 +2047,7 @@ window.palabrasGlobal = [
     "name": "turkey",
     "translation": "Pavo",
     "grupo": "Z1",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦃",
     "urs_imagen": null
   },
@@ -2056,7 +2056,7 @@ window.palabrasGlobal = [
     "name": "lion",
     "translation": "León",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦁",
     "urs_imagen": null
   },
@@ -2065,7 +2065,7 @@ window.palabrasGlobal = [
     "name": "tiger",
     "translation": "Tigre",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐯",
     "urs_imagen": null
   },
@@ -2074,7 +2074,7 @@ window.palabrasGlobal = [
     "name": "elephant",
     "translation": "Elefante",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐘",
     "urs_imagen": null
   },
@@ -2083,7 +2083,7 @@ window.palabrasGlobal = [
     "name": "giraffe",
     "translation": "Jirafa",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦒",
     "urs_imagen": null
   },
@@ -2092,7 +2092,7 @@ window.palabrasGlobal = [
     "name": "monkey",
     "translation": "Mono / Chango",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐒",
     "urs_imagen": null
   },
@@ -2101,7 +2101,7 @@ window.palabrasGlobal = [
     "name": "bear",
     "translation": "Oso",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐻",
     "urs_imagen": null
   },
@@ -2110,7 +2110,7 @@ window.palabrasGlobal = [
     "name": "zebra",
     "translation": "Cebra",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦓",
     "urs_imagen": null
   },
@@ -2119,7 +2119,7 @@ window.palabrasGlobal = [
     "name": "hippo",
     "translation": "Hipopótamo",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦛",
     "urs_imagen": null
   },
@@ -2128,7 +2128,7 @@ window.palabrasGlobal = [
     "name": "rhino",
     "translation": "Rinoceronte",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦏",
     "urs_imagen": null
   },
@@ -2137,7 +2137,7 @@ window.palabrasGlobal = [
     "name": "snake",
     "translation": "Serpiente / Culebra",
     "grupo": "Z2",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐍",
     "urs_imagen": null
   },
@@ -2146,7 +2146,7 @@ window.palabrasGlobal = [
     "name": "dolphin",
     "translation": "Delfín",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐬",
     "urs_imagen": null
   },
@@ -2155,7 +2155,7 @@ window.palabrasGlobal = [
     "name": "shark",
     "translation": "Tiburón",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦈",
     "urs_imagen": null
   },
@@ -2164,7 +2164,7 @@ window.palabrasGlobal = [
     "name": "whale",
     "translation": "Ballena",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐳",
     "urs_imagen": null
   },
@@ -2173,7 +2173,7 @@ window.palabrasGlobal = [
     "name": "octopus",
     "translation": "Pulpo",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐙",
     "urs_imagen": null
   },
@@ -2182,7 +2182,7 @@ window.palabrasGlobal = [
     "name": "turtle",
     "translation": "Tortuga marina",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐢",
     "urs_imagen": null
   },
@@ -2191,7 +2191,7 @@ window.palabrasGlobal = [
     "name": "fish",
     "translation": "Pez / Pescado",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🐟",
     "urs_imagen": null
   },
@@ -2200,7 +2200,7 @@ window.palabrasGlobal = [
     "name": "crab",
     "translation": "Cangrejo",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦀",
     "urs_imagen": null
   },
@@ -2209,7 +2209,7 @@ window.palabrasGlobal = [
     "name": "jellyfish",
     "translation": "Medusa / Malagua",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🪼",
     "urs_imagen": null
   },
@@ -2218,7 +2218,7 @@ window.palabrasGlobal = [
     "name": "starfish",
     "translation": "Estrella de mar",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "⭐",
     "urs_imagen": null
   },
@@ -2227,7 +2227,7 @@ window.palabrasGlobal = [
     "name": "seal",
     "translation": "Foca",
     "grupo": "Z3",
-    "color": "#1e293b",
+    "color": "#000000",
     "emoji": "🦭",
     "urs_imagen": null
   }
