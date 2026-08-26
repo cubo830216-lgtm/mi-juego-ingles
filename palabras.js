@@ -1,7 +1,7 @@
 window.palabrasGlobal = [
   {
     "id": 1,
-    "name": "apple",F
+    "name": "apple",
     "translation": "Manzana",
     "grupo": "A1",
     "color": "#000000",
