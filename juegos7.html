@@ -22,29 +22,7 @@
       height: 100vh;
       overflow: hidden;
       font-family: Arial, sans-serif;
-      position: relative;
     }
-
-    /* Estilo exacto para tu enlace de regresar */
-    .btn-volver {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      background-color: #ef4444;
-      color: white;
-      text-decoration: none;
-      padding: 8px 14px;
-      border-radius: 12px;
-      font-size: 0.9rem;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4);
-      z-index: 100;
-      display: inline-block;
-    }
-    .btn-volver:active {
-      background-color: #dc2626;
-    }
-
     canvas {
       border: 3px solid #38bdf8;
       border-radius: 12px;
@@ -61,33 +39,29 @@
 </head>
 <body>
 
-  <!-- Tu enlace estándar de volver -->
-  <a href="index.html" class="btn-volver">⬅ Volver a la App</a>
-
   <canvas id="canvas" width="320" height="420"></canvas>
   <div class="hint">¡Toca la pantalla para volar! 👆</div>
 
   <script>
-    const canvas = document.getElementById('canvas');
+const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
 
-    // Modo fácil:
+    // 🐥 AJUSTES MODO FÁCIL:
+    // - gravity: 0.22 (cae más lento)
+    // - lift: -5.2 (brinco más suave y controlado)
     let bird = { x: 50, y: 150, radius: 12, gravity: 0.22, lift: -5.2, velocity: 0 };
     let pipes = [];
     let frame = 0;
     let score = 0;
     let gameOver = false;
 
-    // Detectar toques táctiles (ignorando el enlace de volver)
+    // Detectar toque en la pantalla
     window.addEventListener('touchstart', function(e) {
-      if (e.target.tagName === 'A' || e.target.classList.contains('btn-volver')) return;
       e.preventDefault();
       tocar();
     }, { passive: false });
 
-    // Detectar clics de mouse (ignorando el enlace de volver)
-    window.addEventListener('mousedown', function(e) {
-      if (e.target.tagName === 'A' || e.target.classList.contains('btn-volver')) return;
+    window.addEventListener('mousedown', function() {
       tocar();
     });
 
@@ -116,9 +90,9 @@
         bird.velocity += bird.gravity;
         bird.y += bird.velocity;
 
-        // Tubos espaciados
+        // 🟢 FÁCIL: Salen tubos cada 120 cuadros (más tiempo de descanso)
         if (frame % 120 === 0) {
-          let gap = 160;
+          let gap = 160; // 🟢 FÁCIL: Hueco gigante de 160px para pasar sin problemas
           let topHeight = Math.floor(Math.random() * (canvas.height - gap - 80)) + 30;
           pipes.push({
             x: canvas.width,
@@ -129,13 +103,14 @@
 
         // Mover tubos
         for (let i = 0; i < pipes.length; i++) {
-          pipes[i].x -= 1.8;
+          pipes[i].x -= 1.8; // 🟢 FÁCIL: Avanzan más despacio
 
+          // Dibujar tubos
           ctx.fillStyle = "#22c55e";
           ctx.fillRect(pipes[i].x, 0, 48, pipes[i].top);
           ctx.fillRect(pipes[i].x, canvas.height - pipes[i].bottom, 48, pipes[i].bottom);
 
-          // Colisión
+          // Colisiones con un margen más perdonador
           if (
             bird.x + (bird.radius - 3) > pipes[i].x &&
             bird.x - (bird.radius - 3) < pipes[i].x + 48 &&
@@ -144,16 +119,19 @@
             gameOver = true;
           }
 
+          // Puntos
           if (pipes[i].x <= 48 && !pipes[i].passed) {
             score++;
             pipes[i].passed = true;
           }
         }
 
+        // Limpiar tubos
         if (pipes.length > 0 && pipes[0].x < -50) {
           pipes.shift();
         }
 
+        // Colisión suelo/techo
         if (bird.y + bird.radius >= canvas.height || bird.y - bird.radius <= 0) {
           gameOver = true;
         }
@@ -161,7 +139,7 @@
         frame++;
       }
 
-      // Pollito
+      // Dibujar pajarito
       ctx.font = "26px Arial";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
@@ -189,13 +167,12 @@
 
         ctx.fillStyle = "#ffffff";
         ctx.font = "bold 16px Arial";
-        ctx.fillText("Toca para jugar", canvas.width / 2, 277);
+        ctx.fillText("Toca para intentar", canvas.width / 2, 277);
       }
 
       requestAnimationFrame(loop);
     }
 
-    loop();
-  </script>
+    loop();  </script>
 </body>
 </html>
