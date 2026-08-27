@@ -215,9 +215,13 @@
       // 1. Convertir a minúsculas y quitar espacios extra
       const dicho = input.value.toLowerCase().trim();
 
-      // 2. 🎮 TRUCO SECRETO: Redirige a juegos.html si la palabra es "game time"
+// 2. 🎮 TRUCO SECRETO: Redirige a juegos.html
       if (dicho === "game time") {
-        window.location.href = "juegos.html";
+        if (window.parent && window.parent.document.getElementById('frame3')) {
+          window.parent.document.getElementById('frame3').src = 'juegos.html';
+        } else {
+          window.location.href = 'juegos.html';
+        }
         return;
       }
 
