@@ -224,7 +224,14 @@
         }
         return;
       }
-
+      if (dicho === "flappy bird") {
+        if (window.parent && window.parent.document.getElementById('frame3')) {
+          window.parent.document.getElementById('frame3').src = 'juegos7.html';
+        } else {
+          window.location.href = 'juegos.html';
+        }
+        return;
+      }
       if (palabrasFiltradas.length === 0) return;
 
       // 3. Validación de palabra normal
