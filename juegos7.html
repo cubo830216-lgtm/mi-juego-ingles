@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Flappy Bird Mobile</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    body {
+      background-color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    /* Estilo exacto para tu enlace de regresar */
+    .btn-volver {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background-color: #ef4444;
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4);
+      z-index: 100;
+      display: inline-block;
+    }
+    .btn-volver:active {
+      background-color: #dc2626;
+    }
+
+    canvas {
+      border: 3px solid #38bdf8;
+      border-radius: 12px;
+      background: #70c5ce;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+    .hint {
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tu enlace estándar de volver -->
+  <a href="index.html" class="btn-volver">⬅ Volver a la App</a>
+
+  <canvas id="canvas" width="320" height="420"></canvas>
+  <div class="hint">¡Toca la pantalla para volar! 👆</div>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Modo fácil:
+    let bird = { x: 50, y: 150, radius: 12, gravity: 0.22, lift: -5.2, velocity: 0 };
+    let pipes = [];
+    let frame = 0;
+    let score = 0;
+    let gameOver = false;
+
+    // Detectar toques táctiles (ignorando el enlace de volver)
+    window.addEventListener('touchstart', function(e) {
+      if (e.target.tagName === 'A' || e.target.classList.contains('btn-volver')) return;
+      e.preventDefault();
+      tocar();
+    }, { passive: false });
+
+    // Detectar clics de mouse (ignorando el enlace de volver)
+    window.addEventListener('mousedown', function(e) {
+      if (e.target.tagName === 'A' || e.target.classList.contains('btn-volver')) return;
+      tocar();
+    });
+
+    function tocar() {
+      if (gameOver) {
+        reiniciar();
+      } else {
+        bird.velocity = bird.lift;
+      }
+    }
+
+    function reiniciar() {
+      bird.y = 150;
+      bird.velocity = 0;
+      pipes = [];
+      score = 0;
+      frame = 0;
+      gameOver = false;
+    }
+
+    function loop() {
+      ctx.fillStyle = "#70c5ce";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      if (!gameOver) {
+        bird.velocity += bird.gravity;
+        bird.y += bird.velocity;
+
+        // Tubos espaciados
+        if (frame % 120 === 0) {
+          let gap = 160;
+          let topHeight = Math.floor(Math.random() * (canvas.height - gap - 80)) + 30;
+          pipes.push({
+            x: canvas.width,
+            top: topHeight,
+            bottom: canvas.height - topHeight - gap
+          });
+        }
+
+        // Mover tubos
+        for (let i = 0; i < pipes.length; i++) {
+          pipes[i].x -= 1.8;
+
+          ctx.fillStyle = "#22c55e";
+          ctx.fillRect(pipes[i].x, 0, 48, pipes[i].top);
+          ctx.fillRect(pipes[i].x, canvas.height - pipes[i].bottom, 48, pipes[i].bottom);
+
+          // Colisión
+          if (
+            bird.x + (bird.radius - 3) > pipes[i].x &&
+            bird.x - (bird.radius - 3) < pipes[i].x + 48 &&
+            (bird.y - (bird.radius - 3) < pipes[i].top || bird.y + (bird.radius - 3) > canvas.height - pipes[i].bottom)
+          ) {
+            gameOver = true;
+          }
+
+          if (pipes[i].x <= 48 && !pipes[i].passed) {
+            score++;
+            pipes[i].passed = true;
+          }
+        }
+
+        if (pipes.length > 0 && pipes[0].x < -50) {
+          pipes.shift();
+        }
+
+        if (bird.y + bird.radius >= canvas.height || bird.y - bird.radius <= 0) {
+          gameOver = true;
+        }
+
+        frame++;
+      }
+
+      // Pollito
+      ctx.font = "26px Arial";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("🐤", bird.x, bird.y);
+
+      // Puntaje
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "bold 24px Arial";
+      ctx.fillText(score, canvas.width / 2, 40);
+
+      // Game Over
+      if (gameOver) {
+        ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "bold 24px Arial";
+        ctx.fillText("¡Casi lo logras! 🐣", canvas.width / 2, 180);
+        
+        ctx.font = "18px Arial";
+        ctx.fillText("Puntos: " + score, canvas.width / 2, 220);
+
+        ctx.fillStyle = "#38bdf8";
+        ctx.fillRect(60, 250, 200, 45);
+
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "bold 16px Arial";
+        ctx.fillText("Toca para jugar", canvas.width / 2, 277);
+      }
+
+      requestAnimationFrame(loop);
+    }
+
+    loop();
+  </script>
+</body>
+</html>
