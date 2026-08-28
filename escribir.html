@@ -232,6 +232,14 @@
         }
         return;
       }
+            if (dicho === "memory games") {
+        if (window.parent && window.parent.document.getElementById('frame3')) {
+          window.parent.document.getElementById('frame3').src = 'juegos9.html';
+        } else {
+          window.location.href = 'juegos9.html';
+        }
+        return;
+      }
       if (palabrasFiltradas.length === 0) return;
 
       // 3. Validación de palabra normal
