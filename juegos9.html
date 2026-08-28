@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Memoria en Canvas</title>
+  <style>
+    body {
+      background: #0f172a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    canvas {
+      border: 3px solid #38bdf8;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    /* Estilo del botón de reinicio */
+    .btn-reiniciar {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: #ef4444; /* Rojo */
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: none; /* Oculto hasta ganar */
+    }
+    .btn-reiniciar:hover {
+      background-color: #dc2626;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="canvas" width="400" height="400"></canvas>
+
+<!-- Botón para reiniciar -->
+<button id="btn-reiniciar" class="btn-reiniciar" onclick="reiniciarJuego()">🔄 ¡Nuevo Juego!</button>
+
+<script>
+  const canvas = document.getElementById("canvas");
+  const ctx = canvas.getContext("2d");
+  const btnReiniciar = document.getElementById("btn-reiniciar");
+
+  const filas = 4;
+  const columnas = 4;
+  const tamañoCarta = 80;
+  const margen = 15;
+
+  const simbolos = ["🚀", "⭐", "👾", "🤖", "🎮", "🛸", "🔥", "💎"];
+  let cartas = [];
+  let seleccionadas = [];
+  let bloqueado = false;
+  let parejasEncontradas = 0;
+
+  function crearTablero() {
+    let mazo = [...simbolos, ...simbolos];
+    mazo.sort(() => Math.random() - 0.5);
+
+    cartas = [];
+    parejasEncontradas = 0;
+    btnReiniciar.style.display = "none"; // Ocultar el botón al empezar
+
+    let id = 0;
+    for (let f = 0; f < filas; f++) {
+      for (let c = 0; c < columnas; c++) {
+        cartas.push({
+          id: id++,
+          simbolo: mazo.pop(),
+          x: c * (tamañoCarta + margen) + margen,
+          y: f * (tamañoCarta + margen) + margen,
+          volteada: false,
+          encontrada: false
+        });
+      }
+    }
+  }
+
+  function dibujar() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    cartas.forEach(carta => {
+      if (carta.volteada || carta.encontrada) {
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(carta.x, carta.y, tamañoCarta, tamañoCarta);
+        ctx.font = "36px sans-serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(carta.simbolo, carta.x + tamañoCarta / 2, carta.y + tamañoCarta / 2);
+      } else {
+        ctx.fillStyle = "#3b82f6";
+        ctx.fillRect(carta.x, carta.y, tamañoCarta, tamañoCarta);
+        ctx.strokeStyle = "#60a5fa";
+        ctx.lineWidth = 3;
+        ctx.strokeRect(carta.x, carta.y, tamañoCarta, tamañoCarta);
+      }
+    });
+
+    // Mensaje de victoria cuando ganas todas las parejas
+    if (parejasEncontradas === simbolos.length) {
+      ctx.fillStyle = "rgba(15, 23, 42, 0.85)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = "#38bdf8";
+      ctx.font = "bold 28px sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("¡Felicidades! 🎉", canvas.width / 2, canvas.height / 2);
+    }
+  }
+
+  canvas.addEventListener("click", (e) => {
+    if (bloqueado) return;
+
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    cartas.forEach(carta => {
+      if (
+        !carta.volteada && 
+        !carta.encontrada &&
+        x >= carta.x && x <= carta.x + tamañoCarta &&
+        y >= carta.y && y <= carta.y + tamañoCarta
+      ) {
+        carta.volteada = true;
+        seleccionadas.push(carta);
+        dibujar();
+
+        if (seleccionadas.length === 2) {
+          comprobarPareja();
+        }
+      }
+    });
+  });
+
+  function comprobarPareja() {
+    bloqueado = true;
+    const [c1, c2] = seleccionadas;
+
+    if (c1.simbolo === c2.simbolo) {
+      c1.encontrada = true;
+      c2.encontrada = true;
+      seleccionadas = [];
+      bloqueado = false;
+      parejasEncontradas++;
+
+      dibujar();
+
+      // Si encuentra todas las parejas, muestra el botón
+      if (parejasEncontradas === simbolos.length) {
+        btnReiniciar.style.display = "block";
+      }
+    } else {
+      setTimeout(() => {
+        c1.volteada = false;
+        c2.volteada = false;
+        seleccionadas = [];
+        dibujar();
+        bloqueado = false;
+      }, 700);
+    }
+  }
+
+  function reiniciarJuego() {
+    crearTablero();
+    dibujar();
+  }
+
+  // Arrancar juego por primera vez
+  crearTablero();
+  dibujar();
+</script>
+
+</body>
+</html>
